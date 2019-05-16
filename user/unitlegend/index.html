@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="revised" content="2019-05-16T14:28:45 MDT">
-<title>Custom Submission Forms :: Open Storefront Documentation</title>
+<title>Unit Legend :: Open Storefront Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -17,6 +17,21 @@
 
   <link href="/theme-original/variant-blue.css" rel="stylesheet">
 
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css" integrity="sha384-dbVIfZGuN1Yq7/1Ocstc1lUEm+AT+/rCkibIcC/OmWo5f0EA48Vf8CytHzGrSwbQ" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js" integrity="sha384-2BKqo+exmr9su6dir+qCw08N2ZKRucY4PrGQPPWU1A7FtlCGjmEGFqXCv5nyM5Ij" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      { delimiters:
+          [ { left: '$$', right: '$$', display: true }
+          , { left: '\\(', right: '\\)', display: true }
+          , { left: '$', right: '$', display: false }
+          ]});
+      "
+  ></script>
+  
+  
+  
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <script src="/js/jquery-2.x.min.js"></script>
@@ -30,7 +45,7 @@
 
     
   </head>
-  <body data-url="/applicationadmin/customsubmissionforms/">
+  <body data-url="/user/unitlegend/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="showVisitedLinks">
@@ -170,14 +185,13 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/applicationadmin/" class="dd-item parent haschildren
+    <li data-nav-id="/applicationadmin/" class="dd-item haschildren
         ">
       <div>
-      <a href="/applicationadmin/">Application Admin</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/applicationadmin/">Application Admin</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/applicationadmin/customsubmissionforms/" class="dd-item active">
+      <li data-nav-id="/applicationadmin/customsubmissionforms/" class="dd-item">
         <div>
           <a href="/applicationadmin/customsubmissionforms/">
             Custom Submission Forms
@@ -243,10 +257,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/user/" class="dd-item haschildren
+    <li data-nav-id="/user/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/user/">User</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/user/">User</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/user/userguide/" class="dd-item">
@@ -263,7 +278,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/user/unitlegend/" class="dd-item">
+      <li data-nav-id="/user/unitlegend/" class="dd-item active">
         <div>
           <a href="/user/unitlegend/">
             Unit Legend
@@ -307,7 +322,7 @@
       
       
     <div id="top-github-link">
-      <a class="github-link" href="https://github.com/spoonsite/spoon/edit/master/Hugo-StaticGen-Docs/content/applicationadmin/CustomSubmissionForms.md" target="blank">
+      <a class="github-link" href="https://github.com/spoonsite/spoon/edit/master/Hugo-StaticGen-Docs/content/user/unitLegend.md" target="blank">
         <i class="fa fa-code-fork"></i>
         Improve this page
       </a>
@@ -327,7 +342,7 @@
 
 
 
- <a href='/'>SPOON Documentation</a> > <a href='/applicationadmin/'>Application Admin</a> > Custom Submission Forms
+ <a href='/'>SPOON Documentation</a> > <a href='/user/'>User</a> > Unit Legend
 
  
 
@@ -350,7 +365,7 @@
 
 <div id="body-inner">
   
-    <h1>Custom Submission Forms</h1>
+    <h1>Unit Legend</h1>
   
 
 
@@ -358,89 +373,255 @@
     
     
     
-    <p>Custom Submission Forms are used when you want to present a custom look and feel to the user when they submit an entry.  You can add a form with many required or optional fields depending on the Entry Type of the submission.  This form is then shown to the user when they are presented with the fields for a new entry of that type.</p>
+    <table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Base unit</th>
+<th>Description</th>
+</tr>
+</thead>
 
-<h2 id="1-create-a-custom-form-to-be-used-">1. Create a Custom Form to be used ---</h2>
+<tbody>
+<tr>
+<td>'$'</td>
+<td>US Dollar</td>
+<td>1 US dollar</td>
+</tr>
 
-<h3 id="11-create-needed-attributes">1.1 Create Needed Attributes</h3>
+<tr>
+<td>'G'</td>
+<td>Gauss</td>
+<td>1 Gauss</td>
+</tr>
 
-<p>Before a form can be designed, any needed required or custom attributes should be added.  To do this:</p>
+<tr>
+<td>'GB'</td>
+<td>Byte</td>
+<td>$10^9$ bytes (Gigabyte)</td>
+</tr>
 
-<ol type="a">
-<li>Navigate to <strong>Admin Tools</strong> if you are not already there (click on your username in the upper-right, then Admin Tools)</li>
-<li>Select <strong>Data Management</strong> &rarr; <strong>Attributes</strong></li>
-<li>Click <strong>+Add New Type</strong> and fill out the form as required for all attributes (required and optional) you will need to build your custom entry form in the next step.
-<figure><img src="/images/AppAdmin/AddAttrib.JPG" alt="AddAttrib"></figure></li>
-<li>You may wish to enter some codes for the attribute by selecting it and then clicking <strong>Manage Codes</strong>.  This is critical for attributes that do not Allow User Created Codes as there is no way to enter those, and will cause problems on required attributes.
-<figure><img src="/images/AppAdmin/ManageCodes.JPG" alt="ManageCodes"></figure></li>
-</ol>
+<tr>
+<td>'Gb'</td>
+<td>Bit</td>
+<td>$10^9$ bits (Gigabit)</td>
+</tr>
 
-<h3 id="12--createdesign-the-form">1.2  Create/Design The Form</h3>
+<tr>
+<td>'Gbps'</td>
+<td>Bit Per Second</td>
+<td>$10^9 \frac{\text{bits}}{\text{sec}}$</td>
+</tr>
 
-<ol type="a">
-<li>Navigate to <strong>Admin Tools</strong> if you are not already there (click on your username in the upper-right, then Admin Tools)</li>
-<li>Select Data Management &rarr; <strong>Submissions &rarr; Submissions Form Templates</strong></li>
-<li>Click the <strong>+ Add Form</strong> button.  Select an Entry Type.  Fill in the Form Name, Description, and Entry Type.  Remember that these custom submission forms are tied to a specific entry type(s).  If needed, create a new entry type and then navigate back here (Data Management &rarr; Entry Types).  Click <strong>Create Form.</strong>
-<figure><img src="/images/AppAdmin/addTemplate.JPG" alt="addTemplate"></figure></li>
-<li>In the Form Builder Tool Window add sections as needed.  Add fields, paragraphs, horizontal rules, images, and so forth.
-<figure><img src="/images/AppAdmin/customForm.JPG" alt="customForm"></figure></li>
-<li>Note the <strong>Mappings</strong> tab.  The Mappable Fields <strong>MUST</strong> be on the form as well as the Required Attributes.  These sections will have a red x or a green checkmark, depending on if they have been added to the form.
-<figure><img src="/images/AppAdmin/mappingsTab.JPG" alt="mappingsTab"></figure></li>
-<li>To add a mappable field:
+<tr>
+<td>'Grav'</td>
+<td>Newtonian constant of gravitation</td>
+<td></td>
+</tr>
 
-<ol>
-<li>Click the <strong>Add a field</strong> button at the bottom of the form then <strong>Mappable Field OR Attribute</strong>.<br></li>
-<li>Above in the form select the <strong>Map To Field:</strong> drop-down** OR the <strong>Attribute Type:</strong> drop down to select the attribute.<br></li>
-<li>Be sure to check the <strong>Required</strong> box if the field or attribute is a required one.</li>
-<li>When you have finished the form and there are no more red checkmarks on the Mappings tab, save the form and close it.</li>
-</ol></li>
-</ol>
+<tr>
+<td>'MB'</td>
+<td>Byte</td>
+<td>$10^6$ bytes (Megabyte)</td>
+</tr>
 
-<h2 id="2-verify-the-form-and-activate-it">2. Verify the form and activate it</h2>
+<tr>
+<td>'MIPS'</td>
+<td>Million of Instructions Per Second</td>
+<td>$10^6$ $\frac{\text{instruction}}{\text{second}}$</td>
+</tr>
 
-<ol type="a">
-<li><p>When you are finished with the form, from the main Custom Forms page, select the Form and then click on the <strong>Verify</strong> button.  This will prompt you to enter data to verify the validity of the form, that all of the required fields are able to be entered, and so forth.</p></li>
+<tr>
+<td>'Mb'</td>
+<td>Bit</td>
+<td>$10^6$ bits (Megabit)</td>
+</tr>
 
-<li><p>On the final page, <strong>Review Submission</strong> ensure that all of the sections have a green checkmark.  When finished click the <strong>Verify Submission</strong> button.</p></li>
-</ol>
+<tr>
+<td>'Mbps'</td>
+<td>Bit Per Second</td>
+<td>$10^6 \frac{\text{bits}}{\text{sec}}$</td>
+</tr>
 
-<div class="notices note" >
-**If you have all green checkmarks on the Review Submission page, but still get an error like the one below when Verifying:**
-1.  Go back to Admin Tools and **Edit** the form
-2.  Go to the Mappings tab 
-3.  Ensure that the Mappable Fields AND the Required Attributes sub-tabs are green- they have all been accounted for on the form.
-![submitError](/images/AppAdmin/submitError.JPG)
-</div>
+<tr>
+<td>'PB'</td>
+<td>Byte</td>
+<td>$10^{15}$ bytes (Petabyte)</td>
+</tr>
 
-<ol type="i">
-<li><p>When the form is in the status of <strong>Verified</strong>, be sure to select it, then click <strong>Toggle Active Status</strong> so that <strong>&quot;A&quot;</strong> appears in the Active Status Column.</p></li>
+<tr>
+<td>'Pb'</td>
+<td>Bit</td>
+<td>$10^{15}$ bits (Petabit)</td>
+</tr>
 
-<li><p>If you get a message indicating that a custom form is already active for that entry type, deactivate (Toggle Active Status) the other custom form then activate yours that was just created.  An entry type cannot have more than one active custom form at any given time.</p></li>
-</ol>
+<tr>
+<td>'TB'</td>
+<td>Byte</td>
+<td>$10^{12}$ bytes (Terabyte)</td>
+</tr>
 
-<p><figure><img src="/images/AppAdmin/CustomForms.JPG" alt="CustomForms"></figure></p>
+<tr>
+<td>'Tb'</td>
+<td>Bit</td>
+<td>$10^{12}$ bits (Terabit)</td>
+</tr>
 
-<h2 id="3-entry-and-approval-using-the-custom-form">3. Entry and Approval using the Custom Form</h2>
+<tr>
+<td>'arcsec'</td>
+<td>Degree</td>
+<td>$\frac{1}{3600}$ degree</td>
+</tr>
 
-<ol type="a">
-<li><p>Click on your <strong>username</strong> in the upper-right then **User Tools &rarr; Submissions &rarr; + New Submission **</p></li>
+<tr>
+<td>'arcsmin'</td>
+<td>Degree</td>
+<td>$\frac{1}{60}$ degree</td>
+</tr>
 
-<li><p>From the <strong>Select Entry Type Form</strong> box select the Entry Type that you created your custom form for.</p></li>
+<tr>
+<td>'bps'</td>
+<td>Bit Per Second</td>
+<td>1 $\frac{\text{bit}}{\text{sec}}$</td>
+</tr>
 
-<li><p>Click <strong>+ Create</strong> and then enter a unique initial submission name and click <strong>Ok</strong>.</p></li>
+<tr>
+<td>'dBW'</td>
+<td>Decibel Watt</td>
+<td>1 decibel Watt</td>
+</tr>
 
-<li><p>The submission form loads with your customization attributes and fields as designed prior.  Answer the required questions/fields and confirm on the <strong>Review Submission</strong> section that the entry has no red &quot;x&quot; marks, but only green checkmarks.</p></li>
+<tr>
+<td>'dBm'</td>
+<td>Decibel Watt</td>
+<td>$10^{-6}$ decibel Watt (Decibel milli-Watt)</td>
+</tr>
 
-<li><p>Click <strong>Submit for Approval</strong></p></li>
+<tr>
+<td>'dbC'</td>
+<td>Decibel</td>
+<td>1 Decibel</td>
+</tr>
 
-<li><p>Navigate to <strong>Admin Tools &rarr; Data Management &rarr; Entries</strong>  Sort by <strong>Last Activity Date</strong> descending to see the entry just entered at the top of the list.  Select the entry.</p></li>
+<tr>
+<td>'dbc'</td>
+<td>Decibel</td>
+<td>1 Decibel</td>
+</tr>
 
-<li><p>Click on <strong>Approve.</strong></p></li>
+<tr>
+<td>'dbd'</td>
+<td>Decibel</td>
+<td>1 Decibel</td>
+</tr>
 
-<li><p>As a final check, go to the home page and <strong>Search</strong> for the new entry to ensure it is indexed and searchable.</p></li>
-</ol>
+<tr>
+<td>'dbi'</td>
+<td>Decibel</td>
+<td>1 Decibel</td>
+</tr>
 
-<p><figure><img src="/images/AppAdmin/CustomSubmission.JPG" alt="CustomSubmission"></figure></p>
+<tr>
+<td>'deg' or '°'</td>
+<td>Degree</td>
+<td>1 degree</td>
+</tr>
+
+<tr>
+<td>'g'</td>
+<td>Gram</td>
+<td>1 gram</td>
+</tr>
+
+<tr>
+<td>'grms' or 'Grms'</td>
+<td>Root-Mean-Square Acceleration</td>
+<td></td>
+</tr>
+
+<tr>
+<td>'hr' or 'hour'</td>
+<td>Hour</td>
+<td>1 hour</td>
+</tr>
+
+<tr>
+<td>'inch'</td>
+<td>inch</td>
+<td>1 inch</td>
+</tr>
+
+<tr>
+<td>'kB' or 'KB'</td>
+<td>Byte</td>
+<td>$10^3$ bytes (Kilobyte)</td>
+</tr>
+
+<tr>
+<td>'kb' or 'Kb'</td>
+<td>Bit</td>
+<td>$10^3$ bits (Kilobit)</td>
+</tr>
+
+<tr>
+<td>'kbps'</td>
+<td>Bit Per Second</td>
+<td>$10^3 \frac{\text{bits}}{\text{sec}}$</td>
+</tr>
+
+<tr>
+<td>'mG'</td>
+<td>Gauss</td>
+<td>$10^{-6}$ Gauss (microGauss)</td>
+</tr>
+
+<tr>
+<td>'mGrav'</td>
+<td>Grav</td>
+<td>$10^{-6}$ Grav (microGrav)</td>
+</tr>
+
+<tr>
+<td>'micron' or 'μm'</td>
+<td>Meter</td>
+<td>$10^{-6}$ meter (micrometer)</td>
+</tr>
+
+<tr>
+<td>'psi'</td>
+<td>Pounds Per Square Inch</td>
+<td>1 $\frac{\text{lbs}}{\text{in}^2}$</td>
+</tr>
+
+<tr>
+<td>'rpm' or 'RPM'</td>
+<td>Revolution Per Minute</td>
+<td>1 $\frac{\text{revolution}}{\text{Minute}}$</td>
+</tr>
+
+<tr>
+<td>'μN'</td>
+<td>Newton</td>
+<td>$10^{-6}$ Newton (microNewton)</td>
+</tr>
+
+<tr>
+<td>'μm'</td>
+<td>Gram</td>
+<td>$10^{-6}$ gram (Microgram)</td>
+</tr>
+
+<tr>
+<td>'μs'</td>
+<td>Second</td>
+<td>$10^{-6}$ second (Microsecond)</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="jscience-semantics">JScience Semantics</h2>
+
+<p>When attempting to use a superscript fraction as an attribute (ex. 'deg/(hr^(1/2))'), it will not be able to parse that. In order to get it to parse you must use a colon (ex. 'deg/(hr^1:2)'). This will result in it parsing correctly and it will render as $deg/(hr^{1/2})$.</p>
 
 
     
@@ -452,8 +633,8 @@
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/applicationadmin/" title="Application Admin"> <i class="fa fa-chevron-left"></i><label>Application Admin</label></a>
-    <a class="nav nav-next" href="/applicationadmin/workplans/" title="Workplans" style="margin-right: 0px;"><label>Workplans</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/user/quick-overview-of-submitting-a-new-component/" title="Submitting a New Component"> <i class="fa fa-chevron-left"></i><label>Submitting a New Component</label></a>
+    <a class="nav nav-next" href="/user/userguide/" title="User Guide" style="margin-right: 0px;"><label>User Guide</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

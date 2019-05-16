@@ -6,7 +6,6 @@
     <description>Recent content in Application Admin on Open Storefront Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Mar 2019 15:00:27 -0700</lastBuildDate>
     
 	<atom:link href="/applicationadmin/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,7 +17,7 @@
       
       <guid>/applicationadmin/customsubmissionforms/</guid>
       <description>Custom Submission Forms are used when you want to present a custom look and feel to the user when they submit an entry. You can add a form with many required or optional fields depending on the Entry Type of the submission. This form is then shown to the user when they are presented with the fields for a new entry of that type.
-1. Create a Custom Form to be used 1.</description>
+1. Create a Custom Form to be used --- 1.</description>
     </item>
     
     <item>
@@ -27,7 +26,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/applicationadmin/workplans/</guid>
-      <description>1. Create a new Workplan 1.1 Create the Workplan  Navigate to Admin Tools if you are not already there (click on your username in the upper-right, then Admin Tools) Select Data Management &amp;rarr; Workplan Progress Click +Add Workplan  First fill in the Workplan Config Section  Workplan Name: Unique Workplan name Workplan Admin Role: Choose the user group that will have access to entries in this workplan Workplan For: Entry Entry Type: Choose the entry type that this workplan will apply to   1.</description>
+      <description>1. Create a new Workplan 1.1 Create the Workplan  Navigate to Admin Tools if you are not already there (click on your username in the upper-right, then Admin Tools) Select Data Management &amp;rarr; Workplan Management Click +Add Workplan  First fill in the Workplan Config Section  Workplan Name: Unique Workplan name Workplan Admin Role: Choose the user group that will have access to entries in this workplan Workplan For: Entry Entry Type: Choose the entry type that this workplan will apply to   1.</description>
     </item>
     
     <item>
@@ -41,7 +40,7 @@ TOC 1. Default Roles and Resetting to Default
 2. Default Permissions (300+)
 3. Overlapping Permissions
 4. Default Data Restrictions
-1. Default Roles and Resetting to Default When setting up an instance of Storefront it comes with a few default roles as described below and as shown in Admin Tools &amp;rarr; Application Management &amp;rarr; Security Roles on the website (must be logged in as an administrator to view)</description>
+1. Default Roles and Resetting to Default When setting up an instance of SPOON it comes with a few default roles as described below and as shown in Admin Tools &amp;rarr; Application Management &amp;rarr; Security Roles on the website (must be logged in as an administrator to view)</description>
     </item>
     
   </channel>

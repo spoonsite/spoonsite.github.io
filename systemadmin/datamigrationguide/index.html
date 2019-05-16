@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-03-28T15:52:52 MDT">
+<meta name="revised" content="2019-05-16T14:28:45 MDT">
 <title>Data Migration Guide :: Open Storefront Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -16,6 +16,7 @@
 <link href="/theme-original/style.css" rel="stylesheet">
 
   <link href="/theme-original/variant-blue.css" rel="stylesheet">
+
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <script src="/js/jquery-2.x.min.js"></script>
@@ -262,6 +263,13 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
+      <li data-nav-id="/user/unitlegend/" class="dd-item">
+        <div>
+          <a href="/user/unitlegend/">
+            Unit Legend
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
         </ul>
     </li>
 
@@ -280,8 +288,8 @@
 
  <section id="footer"><div style="color: #E0E0DA;">
     <p>OpenStoreFront version 2.8</p>
-    <p>Documentation generated on Mar 28, 2019</p>
-    <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.54.0</p>
+    <p>Documentation generated on May 16, 2019</p>
+    <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.55.5</p>
 </div>
     </section>
   </div>
@@ -409,16 +417,16 @@ of the different data parts needed to fully reconstruct the data.</p>
 
 <p><strong>DB Export</strong> - This just export database (no media or local resources). This exports the whole database.</p>
 
-<div class="notices warning" ><p>On import note the application will be unavailable until import completes.</p>
+<div class="notices warning" >
+On import note the application will be unavailable until import completes. 
 </div>
-
 
 <p><strong>Full Export</strong> - This packages a database export with all file (*expect system archives to avoid excessive disk space requirements)
 <em>Also see &ldquo;Post Cleanup Considerations&rdquo; in section 3</em>.</p>
 
-<div class="notices warning" ><p>On import note the application will be unavailable until import completes.</p>
+<div class="notices warning" >
+On import note the application will be unavailable until import completes. 
 </div>
-
 
 <p><strong>General Export</strong> - This export allow for selective exporting.  Keep in mind it will
  export related data as needed to complete the export.</p>
@@ -466,10 +474,10 @@ create custom mapping or a plugin to match up the data.</p>
 <p>Export the entry via the Admin Tools -&gt; Data Management -&gt; Entries.<br />
 Select entries and export.</p>
 
-<div class="notices warning" ><p>This export will NOT export evaluations associated with the entry; only the entry.
-If evaluations are needed then use the System Export General Export to get all information.</p>
+<div class="notices warning" >
+This export will NOT export evaluations associated with the entry; only the entry.
+If evaluations are needed then use the System Export General Export to get all information.
 </div>
-
 
 <hr />
 
@@ -495,10 +503,10 @@ Please provide specs, if available, for the format.</p>
 
 <p>Use the System Archive: General to select entries to export then import on desired system.</p>
 
-<div class="notices warning" ><p>compatibility is only tests for same version of the application.  IE. export from 2.5 to import 2.5.
-Imports from other version may or may not work.  Contact developer/support for help.</p>
+<div class="notices warning" >
+compatibility is only tests for same version of the application.  IE. export from 2.5 to import 2.5.
+Imports from other version may or may not work.  Contact developer/support for help.
 </div>
-
 
 <hr />
 
@@ -510,9 +518,9 @@ Imports from other version may or may not work.  Contact developer/support for h
 
 <p>Use System Archive - Full Backup  or  Full System / Manual Migration</p>
 
-<div class="notices warning" ><p>Make sure the system has enough space to run this.  Require about the same space free as it&rsquo;s currently using.</p>
+<div class="notices warning" >
+ Make sure the system has enough space to run this.  Require about the same space free as it's currently using.
 </div>
-
 
 <hr />
 

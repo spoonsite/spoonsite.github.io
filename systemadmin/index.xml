@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>System Admin on SPOON Site Documentation</title>
+    <link>/systemadmin/</link>
+    <description>Recent content in System Admin on SPOON Site Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/systemadmin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setup</title>
+      <link>/systemadmin/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/systemadmin/setup/</guid>
+      <description>&lt;p&gt;These are instructions on how to get an instance of the site to run on your personal machine.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>/systemadmin/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/systemadmin/docker/</guid>
+      <description>The SPOON application contains a Dockerfile in order to build Docker images. There are two dockerfiles in the repo. One is for development which is used by Jenkins to deploy the application for testing of new features. The other dockerfile is for the release build. These can be found in the repo at https://github.com/spoonsite/spoon/tree/master/Docker.
+SPOON also automatically builds release versions of the application for consumption by users. These builds are available on Docker Hub.</description>
+    </item>
+    
+    <item>
+      <title>Administrator Guide</title>
+      <link>/systemadmin/administratorguide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/systemadmin/administratorguide/</guid>
+      <description>&lt;p&gt;This article gives further instructions on setting up and configuring the web application.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Data Migration Guide</title>
+      <link>/systemadmin/datamigrationguide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/systemadmin/datamigrationguide/</guid>
+      <description>&lt;p&gt;This guide provide help for importing data from external sources as well as
+moving data from one instance to another instance.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Version Migration</title>
+      <link>/systemadmin/versionmigrationguide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/systemadmin/versionmigrationguide/</guid>
+      <description>&lt;p&gt;This guide details changes and upgrades that have happened from version to version.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

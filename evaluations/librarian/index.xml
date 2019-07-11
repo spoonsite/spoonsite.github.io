@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Librarian on SPOON Site Documentation</title>
+    <link>/evaluations/librarian/</link>
+    <description>Recent content in Librarian on SPOON Site Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/evaluations/librarian/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Create an Evaluation</title>
+      <link>/evaluations/librarian/createevaluationguide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/evaluations/librarian/createevaluationguide/</guid>
+      <description>&lt;p&gt;This guide goes over creating Section templates, Checklist questions and templates, and Evaluation templates.  This guide assumes a librarian has a basic understanding of what an entry is and has an entry that needs to be evaluated.  Once the librarian has created checklists and templates, an evaluation can be created.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Publish an Evaluation</title>
+      <link>/evaluations/librarian/publishinganevaluationguide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/evaluations/librarian/publishinganevaluationguide/</guid>
+      <description>&lt;p&gt;This guide goes over the different types of publishing and the various scenarios a librarian may run into when publishing an entry/evaluation.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

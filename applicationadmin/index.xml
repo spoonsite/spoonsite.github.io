@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Application Admin on SPOON Site Documentation</title>
+    <link>/applicationadmin/</link>
+    <description>Recent content in Application Admin on SPOON Site Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/applicationadmin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Custom Submission Forms</title>
+      <link>/applicationadmin/customsubmissionforms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/applicationadmin/customsubmissionforms/</guid>
+      <description>&lt;p&gt;Custom Submission Forms are used when you want to present a custom look and feel to the user when they submit an entry.  You can add a form with many required or optional fields depending on the Entry Type of the submission.  This form is then shown to the user when they are presented with the fields for a new entry of that type.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Workplans</title>
+      <link>/applicationadmin/workplans/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/applicationadmin/workplans/</guid>
+      <description>&lt;p&gt;This guide reviews how to create and manage a workplan.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Security Roles</title>
+      <link>/applicationadmin/securityroles/</link>
+      <pubDate>Wed, 27 Feb 2019 11:30:53 -0700</pubDate>
+      
+      <guid>/applicationadmin/securityroles/</guid>
+      <description>&lt;p&gt;Security Roles define what permissions users get in the application.  Several default roles are set up with default permissions and are listed below.  These can be reset to default or altered as needed.  New roles can also be added.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

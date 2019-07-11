@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-06-11T11:41:25 MDT">
+<meta name="revised" content="2019-07-11T12:46:35 DST">
 <title>Developer Guide :: SPOON Site Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -226,50 +226,6 @@
       <a href="/evaluations/">Evaluations</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/evaluations/evaluator/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/evaluations/evaluator/">Evaluator</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/evaluations/evaluator/storefront-evaluators-guide/" class="dd-item">
-        <div>
-          <a href="/evaluations/evaluator/storefront-evaluators-guide/">
-            Evaluators Guide
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/evaluations/evaluator/faq/" class="dd-item">
-        <div>
-          <a href="/evaluations/evaluator/faq/">
-            FAQ
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/evaluations/librarian/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/evaluations/librarian/">Librarian</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/evaluations/librarian/createevaluationguide/" class="dd-item">
-        <div>
-          <a href="/evaluations/librarian/createevaluationguide/">
-            Create an Evaluation
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/evaluations/librarian/publishinganevaluationguide/" class="dd-item">
-        <div>
-          <a href="/evaluations/librarian/publishinganevaluationguide/">
-            Publish an Evaluation
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-        </ul>
-    </li>
         </ul>
     </li>
 
@@ -287,9 +243,9 @@
     </ul>
 
  <section id="footer"><div style="color: #E0E0DA;">
-    <p>SPOONsite version 2.8</p>
-    <p>Documentation generated on Jun 11, 2019</p>
-    <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.55.5</p>
+    <p>SPOONsite version 2.9</p>
+    <p>Documentation generated on Jul 11, 2019</p>
+    <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.40.1</p>
 </div>
     </section>
   </div>
@@ -396,7 +352,8 @@
     
     
     
-    <p>This guide goes over various issues developers would be concerned with, such as how to setup their IDE, what libraries are used, etc.</p>
+    <p>This guide goes over various issues developers would be concerned with, such as how to setup their IDE, what libraries are used, etc.
+</p>
 
 <h1 id="1-internal-development">1. Internal Development</h1>
 
@@ -549,10 +506,10 @@ mechanisms.</p>
 <p>The application is targeted to run in Tomcat 7; however, it may run in
 other compatible containers with little or no changes.</p>
 
-<div class="notices note" >
-Searching requires an external Elasticsearch/(Solr) instance setup.
-See [Setup](/systemadmin/setup/)
+<div class="notices note" ><p>Searching requires an external Elasticsearch/(Solr) instance setup.
+See <a href="/systemadmin/setup/">Setup</a></p>
 </div>
+
 
 <h2 id="1-8-testing">1.8 Testing</h2>
 
@@ -673,10 +630,10 @@ service<span style="color:#f92672">.</span><span style="color:#a6e22e">getImport
 <p>4 - Upload build JAR using the Admin-&gt;Application Management-&gt;System-&gt;Plugins
 or copy jar to /var/openstorefront/perm/plugins and the application will auto-deploy</p>
 
-<div class="notices note" >
-Only Libraries and API the application expose are available. (CORE-API, CORE-COMMON)
-All other third-party libraries must be included with your JAR.
+<div class="notices note" ><p>Only Libraries and API the application expose are available. (CORE-API, CORE-COMMON)
+All other third-party libraries must be included with your JAR.</p>
 </div>
+
 
 <h3 id="2-2-2-parser-workflow">2.2.2 Parser Workflow</h3>
 
@@ -718,11 +675,11 @@ All other third-party libraries must be included with your JAR.
 </ul></li>
 </ol>
 
-<div class="notices note" >
-The developer has access to the filehistory record and the service proxy.
+<div class="notices note" ><p>The developer has access to the filehistory record and the service proxy.</p>
 
-**See:** spoon importer plugin as a example.
+<p><strong>See:</strong> spoon importer plugin as a example.</p>
 </div>
+
 
 <h1 id="3-database-management">3. Database Management</h1>
 
@@ -737,11 +694,11 @@ needed/used).</p>
 <div class="alert 
 alert-danger"
  
-role="alert">
-**CAUTION** This will wipe out all data in the application. Data, such
+role="alert"><p><strong>CAUTION</strong> This will wipe out all data in the application. Data, such
 as User profiles, cannot be recovered. Component user data can be
-preserved by performing an export from the component admin tool.
+preserved by performing an export from the component admin tool.</p>
 </div>
+
 
 <p>Make a backup by copying all of the files in the /var/openstorefront/db
 directory or use the following console tools steps:</p>
@@ -762,11 +719,11 @@ files that are packaged with the application.</p>
 
 <h2 id="3-2-installing-database-console">3.2 Installing Database Console</h2>
 
-<div class="notices warning" >
-Viewing (Querying) information is fine; however, use
+<div class="notices warning" ><p>Viewing (Querying) information is fine; however, use
 extreme caution when modifying any records as all logic is handled by
-the application.
+the application.</p>
 </div>
+
 
 <ol>
 <li><p>Download Orient DB (Currently using the 2.1.x series) at
@@ -796,18 +753,18 @@ export and imports.</p></li>
 
 <h2 id="3-3-installing-database-studio">3.3 Installing Database Studio</h2>
 
-<div class="notices note" >
-Orient DB includes a web application for viewing the database
+<div class="notices note" ><p>Orient DB includes a web application for viewing the database
 visually, instead of viewing everything from the console. Once installed,
-Orient DB Studio will run with the database itself once OpenStoreFront 
-is running, and will not require anything to be run locally
+Orient DB Studio will run with the database itself once OpenStoreFront
+is running, and will not require anything to be run locally</p>
 </div>
 
-<div class="notices warning" >
-Viewing (Querying) information is fine; however, use
+
+<div class="notices warning" ><p>Viewing (Querying) information is fine; however, use
 extreme caution when modifying any records as all logic is handled by
-the application.
+the application.</p>
 </div>
+
 
 <ol>
 <li><p>Download Orient DB (Currently using the 2.1.x series) at

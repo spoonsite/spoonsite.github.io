@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-06-11T11:41:25 MDT">
+<meta name="revised" content="2019-07-11T12:46:35 DST">
 <title>Setup :: SPOON Site Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -287,9 +287,9 @@
     </ul>
 
  <section id="footer"><div style="color: #E0E0DA;">
-    <p>SPOONsite version 2.8</p>
-    <p>Documentation generated on Jun 11, 2019</p>
-    <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.55.5</p>
+    <p>SPOONsite version 2.9</p>
+    <p>Documentation generated on Jul 11, 2019</p>
+    <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.40.1</p>
 </div>
     </section>
   </div>
@@ -358,7 +358,8 @@
     
     
     
-    <p>These are instructions on how to get an instance of the site to run on your personal machine.</p>
+    <p>These are instructions on how to get an instance of the site to run on your personal machine.
+</p>
 
 <h1 id="1--installation">1.  Installation</h1>
 
@@ -582,9 +583,9 @@ chown solr:solr latest</code></pre></div></li>
 
 <p>Unless otherwise noted, run as sudo.</p>
 
-<div class="notices note" >
-You can use Nano or another text editor.
+<div class="notices note" ><p>You can use Nano or another text editor.</p>
 </div>
+
 
 <h3 id="151-install-java">1.5.1 Install Java</h3>
 
@@ -615,8 +616,8 @@ and then perform the following:</p>
 <li><p><code>nano /etc/profile</code></p></li>
 
 <li><p>Add to the bottom:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Java Path</span>
-export PATH<span style="color:#f92672">=</span><span style="color:#ae81ff">\$</span>PATH:/usr/java/latest/bin
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Java Path
+</span><span style="color:#75715e"></span>export PATH<span style="color:#f92672">=</span><span style="color:#ae81ff">\$</span>PATH:/usr/java/latest/bin
 export JAVA<span style="color:#ae81ff">\_</span>HOME<span style="color:#f92672">=</span>/usr/java/latest</code></pre></div></li>
 
 <li><p>Save/Exit then <code>source /etc/profile</code></p></li>
@@ -624,8 +625,8 @@ export JAVA<span style="color:#ae81ff">\_</span>HOME<span style="color:#f92672">
 <li><p><code>nano /etc/bash.bashrc</code></p></li>
 
 <li><p>Add to the bottom:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Java Path</span>
-export PATH<span style="color:#f92672">=</span><span style="color:#ae81ff">\$</span>PATH:/usr/java/latest/bin
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Java Path
+</span><span style="color:#75715e"></span>export PATH<span style="color:#f92672">=</span><span style="color:#ae81ff">\$</span>PATH:/usr/java/latest/bin
 export JAVA<span style="color:#ae81ff">\_</span>HOME<span style="color:#f92672">=</span>/usr/java/latest</code></pre></div></li>
 </ol></li>
 
@@ -653,11 +654,11 @@ export JAVA<span style="color:#ae81ff">\_</span>HOME<span style="color:#f92672">
 
 <p>Add line: <code>CATALINA\_OPTS=-Xmx1024m</code></p>
 
-<div class="notices note" >
-Memory settings depend on server config. Minimum recommended
+<div class="notices note" ><p>Memory settings depend on server config. Minimum recommended
 memory is 1GB; however, it may be able to run on less. The amount of
-memory affects the amount of concurrent users the server can support.
+memory affects the amount of concurrent users the server can support.</p>
 </div>
+
 
 <p>VM RAM:</p>
 
@@ -679,12 +680,12 @@ protocol=&quot;org.apache.coyote.http11.Http11NioProtocol&quot;
 maxThreads=&quot;1000&quot;</p></li>
 </ul>
 
-<div class="notices info" >
-Also, you may consider setting more aggressive connection settings
+<div class="notices info" ><p>Also, you may consider setting more aggressive connection settings
 than the default depending on your expected load. See Tomcat
-documentation: <http://tomcat.apache.org/tomcat-7.0-doc/index.html>.
-The default settings will suffice for most deployments.
-</div></li>
+documentation: <a href="http://tomcat.apache.org/tomcat-7.0-doc/index.html">http://tomcat.apache.org/tomcat-7.0-doc/index.html</a>.
+The default settings will suffice for most deployments.</p>
+</div>
+</li>
 
 <li><p>Setup Tomcat as a service using the following:</p>
 
@@ -695,20 +696,20 @@ The default settings will suffice for most deployments.
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>
-<span style="color:#75715e"># description: Tomcat Start Stop Restart</span>
-
-<span style="color:#75715e"># processname: tomcat</span>
-
-<span style="color:#75715e"># chkconfig: 234 20 80</span>
-
-<span style="color:#75715e">#JAVA_HOME=/usr/java/jdk8</span>
-
-<span style="color:#75715e">#export JAVA_HOME</span>
-
-<span style="color:#75715e">#PATH=$JAVA_HOME/bin:\$PATH</span>
-
-<span style="color:#75715e">#export PATH</span>
-
+<span style="color:#75715e"># description: Tomcat Start Stop Restart
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e"># processname: tomcat
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e"># chkconfig: 234 20 80
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">#JAVA_HOME=/usr/java/jdk8
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">#export JAVA_HOME
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">#PATH=$JAVA_HOME/bin:\$PATH
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">#export PATH
+</span><span style="color:#75715e"></span>
 CATALINA_HOME<span style="color:#f92672">=</span>/usr/local/tomcat/latest
 
 <span style="color:#66d9ef">case</span> $1 in
@@ -760,12 +761,12 @@ the repository for your system install (e.g. yum, apt, and urpmi)</p></li>
 from the version 6 repo.</p></li>
 </ol>
 
-<div class="notices note" >
-JPackage version has a mistake in the package. The ecj jar
+<div class="notices note" ><p>JPackage version has a mistake in the package. The ecj jar
 library is old and doesn't work with JDK1.8 ; however, this is easily
 corrected. Download 7.0.54 from apache.org and replace ecj-xxx.jar in
-tomcat/lib directory with ecj-xxx.jar from the 7.0.54 version.
+tomcat/lib directory with ecj-xxx.jar from the 7.0.54 version.</p>
 </div>
+
 
 <h3 id="154-server-control">1.5.4 Server Control</h3>
 
@@ -776,17 +777,17 @@ tomcat/lib directory with ecj-xxx.jar from the 7.0.54 version.
 
 <li><p>service tomcat stop</p>
 
-<div class="notices note" >
-It can take a minute for the application to shut down.
-Please wait before restarting.
-</div></li>
+<div class="notices note" ><p>It can take a minute for the application to shut down.
+Please wait before restarting.</p>
+</div>
+</li>
 
 <li><p>service tomcat restart</p>
 
-<div class="notices note" >
-Using this is not recommended as it not always successful
-due the script not waiting for shutdown.
-</div></li>
+<div class="notices note" ><p>Using this is not recommended as it not always successful
+due the script not waiting for shutdown.</p>
+</div>
+</li>
 </ul>
 
 <h2 id="16-deploying-application">1.6 Deploying application</h2>
@@ -807,27 +808,27 @@ application startup. The high level directory map is stored under
 initial startup.</p></li>
 
 <li><p>db - holds database files
-<div class="notices note" >
-When upgrading to version 2.3+ from 2.2 and earlier, there is
+<div class="notices note" ><p>When upgrading to version 2.3+ from 2.2 and earlier, there is
 an additional step when existing data needs to persist. Navigate
 to the database directory: /var/openstorefront/db/databases/openstorefront
 and delete the openstorefront .wal file (openstorefront*.wal).
 First creating a complete backup of the database files would be prudent.
 Deleting this file allows the database to be upgraded to a newer version
-which is used starting with version 2.3.
-</div></p></li>
+which is used starting with version 2.3.</p>
+</div>
+</p></li>
 
 <li><p>import -directory for placing files to be imported.</p></li>
 
 <li><p>perm - permanent storage location</p></li>
 
 <li><p>temp - temporary storage that application controls.
-<div class="notices note" >
-Most application temp storage defaults to the system temp storage
+<div class="notices note" ><p>Most application temp storage defaults to the system temp storage
 location. The temp directory here holds information that needs to be
 persisted for a longer time period. The main configuration file is:
-/var/openstorefront/config/openstorefront.properties
-</div></p></li>
+/var/openstorefront/config/openstorefront.properties</p>
+</div>
+</p></li>
 </ul>
 
 <p>On initial setup modify the following:</p>
@@ -942,11 +943,11 @@ different.</p>
 <p>(See <a href="https://bugster.forgerock.org/jira/browse/OPENAM-211:">https://bugster.forgerock.org/jira/browse/OPENAM-211:</a> J2EE agents
 are unable and will not work, if the container was started prior to OpenAM).</p>
 
-<div class="notices note" >
-When the OpenAM policy agent is installed on Tomcat, the
+<div class="notices note" ><p>When the OpenAM policy agent is installed on Tomcat, the
 application server will not start unless the OpenAM server is available.
-This is a known issue with the OpenAM Policy agent.
+This is a known issue with the OpenAM Policy agent.</p>
 </div>
+
 
 <h3 id="1101-versions-used">1.10.1 Versions Used</h3>
 

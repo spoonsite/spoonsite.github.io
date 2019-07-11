@@ -26,7 +26,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/dev/developersguide/</guid>
-      <description>&lt;p&gt;This guide goes over various issues developers would be concerned with, such as how to setup their IDE, what libraries are used, etc.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This guide goes over various issues developers would be concerned with, such as how to setup their IDE, what libraries are used, etc.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -35,7 +36,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/systemadmin/setup/</guid>
-      <description>&lt;p&gt;These are instructions on how to get an instance of the site to run on your personal machine.&lt;/p&gt;</description>
+      <description>&lt;p&gt;These are instructions on how to get an instance of the site to run on your personal machine.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -44,7 +46,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/user/userguide/</guid>
-      <description>&lt;p&gt;The user guide is in the application help system.&lt;/p&gt;</description>
+      <description>&lt;p&gt;The user guide is in the application help system.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -53,7 +56,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/dev/architecture/</guid>
-      <description>&lt;p&gt;This guide describes the high-level design of the server and client architecture.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This guide describes the high-level design of the server and client architecture.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -62,7 +66,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/applicationadmin/customsubmissionforms/</guid>
-      <description>&lt;p&gt;Custom Submission Forms are used when you want to present a custom look and feel to the user when they submit an entry.  You can add a form with many required or optional fields depending on the Entry Type of the submission.  This form is then shown to the user when they are presented with the fields for a new entry of that type.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Custom Submission Forms are used when you want to present a custom look and feel to the user when they submit an entry.  You can add a form with many required or optional fields depending on the Entry Type of the submission.  This form is then shown to the user when they are presented with the fields for a new entry of that type.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -71,7 +76,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/user/quick-overview-of-submitting-a-new-component/</guid>
-      <description>&lt;p&gt;This article briefly explains how to submit an entry onto SPOON&lt;/p&gt;</description>
+      <description>&lt;p&gt;This article briefly explains how to submit an entry onto SPOON
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -80,7 +86,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/applicationadmin/workplans/</guid>
-      <description>&lt;p&gt;This guide reviews how to create and manage a workplan.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This guide reviews how to create and manage a workplan.
+ &lt;/p&gt;</description>
     </item>
     
     <item>
@@ -99,7 +106,8 @@ SPOON also automatically builds release versions of the application for consumpt
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/dev/front-end-code-standard/</guid>
-      <description>&lt;p&gt;These are the agreed-upon standards for this project.&lt;/p&gt;</description>
+      <description>&lt;p&gt;These are the agreed-upon standards for this project.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -108,7 +116,8 @@ SPOON also automatically builds release versions of the application for consumpt
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/user/unitlegend/</guid>
-      <description>&lt;p&gt;This is the legend for commonly confused unit names and acronyms.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This is the legend for commonly confused unit names and acronyms.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -117,7 +126,8 @@ SPOON also automatically builds release versions of the application for consumpt
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/systemadmin/administratorguide/</guid>
-      <description>&lt;p&gt;This article gives further instructions on setting up and configuring the web application.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This article gives further instructions on setting up and configuring the web application.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -127,7 +137,8 @@ SPOON also automatically builds release versions of the application for consumpt
       
       <guid>/systemadmin/datamigrationguide/</guid>
       <description>&lt;p&gt;This guide provide help for importing data from external sources as well as
-moving data from one instance to another instance.&lt;/p&gt;</description>
+moving data from one instance to another instance.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -136,7 +147,8 @@ moving data from one instance to another instance.&lt;/p&gt;</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/dev/uiguide/</guid>
-      <description>&lt;p&gt;These are general guidelines on what the look of SPOON should be.&lt;/p&gt;</description>
+      <description>&lt;p&gt;These are general guidelines on what the look of SPOON should be.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -145,7 +157,8 @@ moving data from one instance to another instance.&lt;/p&gt;</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/systemadmin/versionmigrationguide/</guid>
-      <description>&lt;p&gt;This guide details changes and upgrades that have happened from version to version.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This guide details changes and upgrades that have happened from version to version.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -154,7 +167,8 @@ moving data from one instance to another instance.&lt;/p&gt;</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/dev/server-code-standard/</guid>
-      <description>&lt;p&gt;These are special notes when making additions to the server-side code.&lt;/p&gt;</description>
+      <description>&lt;p&gt;These are special notes when making additions to the server-side code.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -163,7 +177,8 @@ moving data from one instance to another instance.&lt;/p&gt;</description>
       <pubDate>Wed, 27 Feb 2019 11:30:53 -0700</pubDate>
       
       <guid>/applicationadmin/securityroles/</guid>
-      <description>&lt;p&gt;Security Roles define what permissions users get in the application.  Several default roles are set up with default permissions and are listed below.  These can be reset to default or altered as needed.  New roles can also be added.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Security Roles define what permissions users get in the application.  Several default roles are set up with default permissions and are listed below.  These can be reset to default or altered as needed.  New roles can also be added.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -172,7 +187,8 @@ moving data from one instance to another instance.&lt;/p&gt;</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/evaluations/evaluator/storefront-evaluators-guide/</guid>
-      <description>&lt;p&gt;This is a complete overview of the user interface to make an Evaluation on SPOON.&lt;/p&gt;</description>
+      <description>This is a complete overview of the user interface to make an Evaluation on SPOON. Note: 2.6 Introduced some UI changes however, processes and concepts are the same.
+TL;DR  Administrators create and publish evaluations. Evaluators fill out evaluations. While editing an evaluation you will not see exactly what the user sees. The user sees things bundled under a Details tab and an Evaluation tab. In an evaluation everything under the Entry section applies to that Details tab while everything under the Sections and Checklist sections apply to that Evaluations tab.</description>
     </item>
     
     <item>
@@ -181,7 +197,10 @@ moving data from one instance to another instance.&lt;/p&gt;</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/evaluations/evaluator/faq/</guid>
-      <description>&lt;p&gt;Frequently Asked Questions by/for Evaluators&lt;/p&gt;</description>
+      <description>Frequently Asked Questions by/for Evaluators Question
+Do sub-sections save independent of other sub-sections?
+Answer
+Section (Eg. Architecture) may be broken in multiple sub-section. Saving save all sub-sections. So if your are edit more than one on multiple browser tabs. Keep in mind you changes will override changes in another tab. It&amp;rsquo;s recommended to only edit in one browser tab and one browser at a time. Use change history to find resolve previous issues.</description>
     </item>
     
     <item>
@@ -190,7 +209,8 @@ moving data from one instance to another instance.&lt;/p&gt;</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/evaluations/librarian/createevaluationguide/</guid>
-      <description>&lt;p&gt;This guide goes over creating Section templates, Checklist questions and templates, and Evaluation templates.  This guide assumes a librarian has a basic understanding of what an entry is and has an entry that needs to be evaluated.  Once the librarian has created checklists and templates, an evaluation can be created.&lt;/p&gt;</description>
+      <description>This guide goes over creating Section templates, Checklist questions and templates, and Evaluation templates. This guide assumes a librarian has a basic understanding of what an entry is and has an entry that needs to be evaluated. Once the librarian has created checklists and templates, an evaluation can be created.
+Who is this for? This guide is for anyone with the role of librarian or administrator. If unsure of current role(s), contact an administrator.</description>
     </item>
     
     <item>
@@ -199,7 +219,8 @@ moving data from one instance to another instance.&lt;/p&gt;</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/evaluations/librarian/publishinganevaluationguide/</guid>
-      <description>&lt;p&gt;This guide goes over the different types of publishing and the various scenarios a librarian may run into when publishing an entry/evaluation.&lt;/p&gt;</description>
+      <description>This guide goes over the different types of publishing and the various scenarios a librarian may run into when publishing an entry/evaluation. Different types of publishing:
+ Entry publishing - publishes the entry summary only Partial publishing - publishes all default public fields except for those that have been marked as private. Full publishing - publishes all default public fields.  Reminder: an entry is a single entity that can have one to many evaluations.</description>
     </item>
     
     <item>

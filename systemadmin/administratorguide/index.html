@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-06-11T11:41:25 MDT">
+<meta name="revised" content="2019-07-11T12:46:35 DST">
 <title>Administrator Guide :: SPOON Site Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -287,9 +287,9 @@
     </ul>
 
  <section id="footer"><div style="color: #E0E0DA;">
-    <p>SPOONsite version 2.8</p>
-    <p>Documentation generated on Jun 11, 2019</p>
-    <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.55.5</p>
+    <p>SPOONsite version 2.9</p>
+    <p>Documentation generated on Jul 11, 2019</p>
+    <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.40.1</p>
 </div>
     </section>
   </div>
@@ -386,7 +386,8 @@
     
     
     
-    <p>This article gives further instructions on setting up and configuring the web application.</p>
+    <p>This article gives further instructions on setting up and configuring the web application.
+</p>
 
 <h1 id="1-other-guides">1. Other Guides</h1>
 
@@ -508,9 +509,9 @@ for how to configure JDBCRealm to obtain its DataSource from JNDI.</p>
 If using the built-in security then the system will create default roles for
 default users, admins and evaluators.  It will create a default admin user: (admin / Secret1@)</p>
 
-<div class="notices warning" >
-You should change the admin password after login in.
+<div class="notices warning" ><p>You should change the admin password after login in.</p>
 </div>
+
 
 <p>Pre-defined groups:</p>
 
@@ -526,9 +527,9 @@ You should change the admin password after login in.
 
 <p>An admin can define new groups as needed.</p>
 
-<div class="notices note" >
-All users are part of the Default group. 
+<div class="notices note" ><p>All users are part of the Default group.</p>
 </div>
+
 
 <h2 id="2-2-integration-external-ldap-user-syncing">2.2  Integration External LDAP (User Syncing)</h2>
 
@@ -666,11 +667,11 @@ needed/used).</p>
 
 <h2 id="3-1-refreshing-the-database">3.1 Refreshing the Database</h2>
 
-<div class="notices warning" >
-This will wipe out all data in the application. Data, such
+<div class="notices warning" ><p>This will wipe out all data in the application. Data, such
 as User profiles, cannot be recovered. Component user data can be
-preserved by performing an export from the component admin tool.
+preserved by performing an export from the component admin tool.</p>
 </div>
+
 
 <p>Make a backup by copying all of the files in the /var/openstorefront/db
 directory or use the following console tools steps:</p>
@@ -694,17 +695,16 @@ files that are packaged with the application.</p>
 
 <h2 id="3-2-installing-database-console">3.2 Installing Database Console</h2>
 
-<div class="notices warning" >
-Viewing (Querying) information is fine; however, use
+<div class="notices warning" ><p>Viewing (Querying) information is fine; however, use
 extreme caution when modifying any records as all logic is handled by
-the application.
+the application.</p>
 
-Also, note longterm uses on external tools and access may have STIG consequences.
+<p>Also, note longterm uses on external tools and access may have STIG consequences.
 For full audit log support Orient Enterprise edition is needed.  External server
 would need to be set.  The application does not currently have support for that but,
-it could added.
-
+it could added.</p>
 </div>
+
 
 <ol>
 <li><p>Download Orient DB (Currently using the 2.2.x series) at
@@ -734,18 +734,18 @@ export and imports.</p></li>
 
 <h2 id="3-3-installing-database-studio">3.3 Installing Database Studio</h2>
 
-<div class="notices note" >
-Orient DB includes a web application for viewing the database
+<div class="notices note" ><p>Orient DB includes a web application for viewing the database
 visually, instead of viewing everything from the console. Once installed,
 Orient DB Studio will run with the database itself once OpenStoreFront
-is running, and will not require anything to be run locally
+is running, and will not require anything to be run locally</p>
 </div>
 
-<div class="notices warning" >
-Viewing (Querying) information is fine; however, use
+
+<div class="notices warning" ><p>Viewing (Querying) information is fine; however, use
 extreme caution when modifying any records as all logic is handled by
-the application.
+the application.</p>
 </div>
+
 
 <ol>
 <li><p>Download Orient DB (Currently using the 2.2.x series) at

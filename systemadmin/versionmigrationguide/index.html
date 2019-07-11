@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-06-11T11:41:25 MDT">
+<meta name="revised" content="2019-07-11T12:46:35 DST">
 <title>Version Migration :: SPOON Site Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -287,9 +287,9 @@
     </ul>
 
  <section id="footer"><div style="color: #E0E0DA;">
-    <p>SPOONsite version 2.8</p>
-    <p>Documentation generated on Jun 11, 2019</p>
-    <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.55.5</p>
+    <p>SPOONsite version 2.9</p>
+    <p>Documentation generated on Jul 11, 2019</p>
+    <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.40.1</p>
 </div>
     </section>
   </div>
@@ -358,7 +358,8 @@
     
     
     
-    <p>This guide details changes and upgrades that have happened from version to version.</p>
+    <p>This guide details changes and upgrades that have happened from version to version.
+</p>
 
 <p>In general, you should always upgrade one version at a time in order. (IE. going from 2.2 to 2.4 then 2.2 to 2.3 then to 2.4)  That way data migrations will occur in the proper order.  If you start from the lastest version and have no data then migration is not needed.</p>
 
@@ -455,21 +456,21 @@ orientdb&gt; IMPORT DATABASE /temp/mydb.json.gz</code></pre></div>
 <ol start="4">
 <li>Run Elasticsearch (with <strong>SysV init</strong>)<br></li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># on system boot</span>
-$ sudo chkconfig --add elasticsearch
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># on system boot
+</span><span style="color:#75715e"></span>$ sudo chkconfig --add elasticsearch
 
-<span style="color:#75715e"># manually</span>
-$ sudo -i service elasticsearch start
+<span style="color:#75715e"># manually
+</span><span style="color:#75715e"></span>$ sudo -i service elasticsearch start
 $ sudo -i service elasticsearch stop</code></pre></div>
 <ol start="5">
 <li>Run Elasticsearch (with <strong>systemd</strong>)</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># on system boot</span>
-$ sudo /bin/systemctl daemon-reload
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># on system boot
+</span><span style="color:#75715e"></span>$ sudo /bin/systemctl daemon-reload
 $ sudo /bin/systemctl enable elasticsearch.service
 
-<span style="color:#75715e">#manually</span>
-$ sudo systemctl start elasticsearch.service
+<span style="color:#75715e">#manually
+</span><span style="color:#75715e"></span>$ sudo systemctl start elasticsearch.service
 $ sudo systemctl stop elasticsearch.service</code></pre></div>
 <p>elasticsearch service command reference (elasticsearch should be running at this point):</p>
 
@@ -503,9 +504,9 @@ $ sudo systemctl stop elasticsearch.service</code></pre></div>
 
 <h2 id="upgrading-from-23-to-24">Upgrading from 2.3 to 2.4</h2>
 
-<div class="notices note" >
-As part of the upgrade, Metadata will be automatically converted to Attributes.  This may take a while, if there is a lot of Metadata associated with the entries.  The server won't be avaliable until the migration is complete.  
+<div class="notices note" ><p>As part of the upgrade, Metadata will be automatically converted to Attributes.  This may take a while, if there is a lot of Metadata associated with the entries.  The server won't be avaliable until the migration is complete.</p>
 </div>
+
 
 <p>Pre-Deployment</p>
 

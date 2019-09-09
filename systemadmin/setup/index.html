@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-07-19T07:32:56 DST">
+<meta name="revised" content="2019-09-09T15:45:27 MDT">
 <title>Setup :: SPOON Site Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -287,9 +287,9 @@
     </ul>
 
  <section id="footer"><div style="color: #E0E0DA;">
-    <p>SPOONsite version 2.9</p>
-    <p>Documentation generated on Jul 19, 2019</p>
-    <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.40.1</p>
+    <p>SPOONsite version 2.10</p>
+    <p>Documentation generated on Sep 9, 2019</p>
+    <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.54.0</p>
 </div>
     </section>
   </div>
@@ -358,8 +358,7 @@
     
     
     
-    <p>These are instructions on how to get an instance of the site to run on your personal machine.
-</p>
+    <p>These are instructions on how to get an instance of the site to run on your personal machine.</p>
 
 <h1 id="1--installation">1.  Installation</h1>
 
@@ -616,8 +615,8 @@ and then perform the following:</p>
 <li><p><code>nano /etc/profile</code></p></li>
 
 <li><p>Add to the bottom:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Java Path
-</span><span style="color:#75715e"></span>export PATH<span style="color:#f92672">=</span><span style="color:#ae81ff">\$</span>PATH:/usr/java/latest/bin
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Java Path</span>
+export PATH<span style="color:#f92672">=</span><span style="color:#ae81ff">\$</span>PATH:/usr/java/latest/bin
 export JAVA<span style="color:#ae81ff">\_</span>HOME<span style="color:#f92672">=</span>/usr/java/latest</code></pre></div></li>
 
 <li><p>Save/Exit then <code>source /etc/profile</code></p></li>
@@ -625,8 +624,8 @@ export JAVA<span style="color:#ae81ff">\_</span>HOME<span style="color:#f92672">
 <li><p><code>nano /etc/bash.bashrc</code></p></li>
 
 <li><p>Add to the bottom:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Java Path
-</span><span style="color:#75715e"></span>export PATH<span style="color:#f92672">=</span><span style="color:#ae81ff">\$</span>PATH:/usr/java/latest/bin
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Java Path</span>
+export PATH<span style="color:#f92672">=</span><span style="color:#ae81ff">\$</span>PATH:/usr/java/latest/bin
 export JAVA<span style="color:#ae81ff">\_</span>HOME<span style="color:#f92672">=</span>/usr/java/latest</code></pre></div></li>
 </ol></li>
 
@@ -696,20 +695,20 @@ The default settings will suffice for most deployments.</p>
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>
-<span style="color:#75715e"># description: Tomcat Start Stop Restart
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e"># processname: tomcat
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e"># chkconfig: 234 20 80
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">#JAVA_HOME=/usr/java/jdk8
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">#export JAVA_HOME
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">#PATH=$JAVA_HOME/bin:\$PATH
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">#export PATH
-</span><span style="color:#75715e"></span>
+<span style="color:#75715e"># description: Tomcat Start Stop Restart</span>
+
+<span style="color:#75715e"># processname: tomcat</span>
+
+<span style="color:#75715e"># chkconfig: 234 20 80</span>
+
+<span style="color:#75715e">#JAVA_HOME=/usr/java/jdk8</span>
+
+<span style="color:#75715e">#export JAVA_HOME</span>
+
+<span style="color:#75715e">#PATH=$JAVA_HOME/bin:\$PATH</span>
+
+<span style="color:#75715e">#export PATH</span>
+
 CATALINA_HOME<span style="color:#f92672">=</span>/usr/local/tomcat/latest
 
 <span style="color:#66d9ef">case</span> $1 in

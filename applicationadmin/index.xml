@@ -6,27 +6,40 @@
     <description>Recent content in Application Admin on SPOON Site Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 May 2019 09:37:33 -0600</lastBuildDate>
+    <lastBuildDate>Tue, 03 Dec 2019 16:13:14 -0700</lastBuildDate>
     
 	<atom:link href="/applicationadmin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Custom Submission Forms</title>
-      <link>/applicationadmin/customsubmissionforms/</link>
+      <title>App Management</title>
+      <link>/applicationadmin/applicationmanagement/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/applicationadmin/customsubmissionforms/</guid>
-      <description>&lt;p&gt;Custom Submission Forms are used when you want to present a custom look and feel to the user when they submit an entry.  You can add a form with many required or optional fields depending on the Entry Type of the submission.  This form is then shown to the user when they are presented with the fields for a new entry of that type.&lt;/p&gt;</description>
+      <guid>/applicationadmin/applicationmanagement/</guid>
+      <description>Table of Contents  Alerts Feedback Jobs Messages Tracking User Management Reports  Sections not covered in this page:
+ Branding Security Security Roles System  Alerts Customized alerts can be set up to send an email to a specified email address. You can see what events are available to trigger alerts by clicking Add.
+Feedback SPOON users can submit feedback by clicking on their Username in the top right corner of SPOON, then clicking Contact Us.</description>
     </item>
     
     <item>
-      <title>Workplans</title>
-      <link>/applicationadmin/workplans/</link>
+      <title>Branding</title>
+      <link>/applicationadmin/branding/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/applicationadmin/workplans/</guid>
-      <description>&lt;p&gt;This guide reviews how to create and manage a workplan.&lt;/p&gt;</description>
+      <guid>/applicationadmin/branding/</guid>
+      <description>Table of Contents  General Login Page Support Security Colors/Logos Current CSS  When updating or changing branding, you must toggle it back on. When a branding is created or edited it is automatically turned off. A branding is active only if the status column has an &amp;ldquo;A&amp;rdquo; in it or if the name has &amp;ldquo;active&amp;rdquo; next to it.
+ The Branding Form General Be aware of the fact that text color is preserved from the input boxes on this page to the destinations of the content.</description>
+    </item>
+    
+    <item>
+      <title>System</title>
+      <link>/applicationadmin/system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/applicationadmin/system/</guid>
+      <description>Table of Contents  Error Tickets Application State Properties System Configuration Properties Logs and Logging Plugins Cache Search Control Recent Changes Email Managers Heap Memory Memory Pools Garbage Collection  The System page provides information about the system SPOON is running on like memory usage, cache management, and error logs.
+Note that on this page, and every sub-page of the System page, the &amp;ldquo;Refresh&amp;rdquo; button does nothing but send a new request to the server for the sub-page displayed - it does not edit or &amp;ldquo;refresh&amp;rdquo; any data object selected at the time.</description>
     </item>
     
     <item>
@@ -35,7 +48,71 @@
       <pubDate>Wed, 27 Feb 2019 11:30:53 -0700</pubDate>
       
       <guid>/applicationadmin/securityroles/</guid>
-      <description>&lt;p&gt;Security Roles define what permissions users get in the application.  Several default roles are set up with default permissions and are listed below.  These can be reset to default or altered as needed.  New roles can also be added.&lt;/p&gt;</description>
+      <description>Table of Contents  Default Roles and Resetting to Default Default Permissions (300+) Overlapping Permissions Default Data Restrictions  Default Roles and Resetting to Default When setting up an instance of SPOON it comes with a few default roles as described below and as shown in Admin Tools &amp;rarr; Application Management &amp;rarr; Security Roles on the website (must be logged in as an administrator to view).
+   SECURITY ROLE NAME EXPLANATION DEFAULT PERMISSIONS NOTES     GUEST-GROUP Permissions for guest when they come to the site directly via URL, such as to view an entry.</description>
+    </item>
+    
+    <item>
+      <title>Data Management</title>
+      <link>/applicationadmin/datamanagement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/applicationadmin/datamanagement/</guid>
+      <description>Table of Contents  Frequently Asked Question Support Media Highlights Lookups Media Relationships  Frequently Asked Questions This list of questions is accessible to each user and should hold a couple of common questions.
+Support Media In the top right site menu there is a &amp;ldquo;Tutorials&amp;rdquo; button that shows the list of video tutorials uploaded onto SPOON. All this information is provided externally, on this site (spoonsite.github.io)
+Highlights &amp;ldquo;Highlights&amp;rdquo; is the name of SPOON&amp;rsquo;s carousel home-page widget.</description>
+    </item>
+    
+    <item>
+      <title>Attributes and Entry Types</title>
+      <link>/applicationadmin/attributes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/applicationadmin/attributes/</guid>
+      <description>Attributes Entries Entry Types Submission Form Templates Partial Submissions  Attributes An &amp;ldquo;attribute&amp;rdquo; on SPOON is an entry specification, for example height, width, or length of a part.
+If you want to add a new attribute or edit an existing one, click Add New Type or Edit Attribute respectively and a popup with options will appear.
+   Edit Attribute Fields EXPLANATION     Label The label is the name of the attribute that a user would actually see   Type Code The Type Code is the attribute ID that is used internally to keep track of this attribute; as such this should be unique.</description>
+    </item>
+    
+    <item>
+      <title>Custom Submission Forms</title>
+      <link>/applicationadmin/customsubmissionforms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/applicationadmin/customsubmissionforms/</guid>
+      <description>Create a Custom Form This is how to create a custom submission form for new submissions.
+Create Needed Attributes Before a form can be designed, any required or custom attributes should be added. To do this:
+ Navigate to Admin Tools if you are not already there (click on your username in the upper-right, then Admin Tools Select Data Management &amp;rarr; Attributes Click +Add New Type and fill out the form as required for all attributes (required and optional) you will need to build your custom entry form in the next step.</description>
+    </item>
+    
+    <item>
+      <title>User Data Management</title>
+      <link>/applicationadmin/userdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/applicationadmin/userdata/</guid>
+      <description>Table of Contents  Contacts Organizations Questions Reviews Watches Tags User Profiles  Contacts Entries on SPOON can have a designated &amp;ldquo;Contact&amp;rdquo;, a person who is the point of contact for that particular entry.
+Organizations Here you can see all the registered organizations on SPOON. There are tools for merging organizations when duplicates are found.
+Questions Users can ask questions to an entry&amp;rsquo;s contacts, but before the question shows up publicly on SPOON, it must be approved by the Admin.</description>
+    </item>
+    
+    <item>
+      <title>Workplans</title>
+      <link>/applicationadmin/workplans/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/applicationadmin/workplans/</guid>
+      <description>Create a new Workplan A step-by-step guide to creating a workplan.
+Create the Workplan  Navigate to Admin Tools if you are not already there (click your username in the upper-right, then Admin Tools) Select Data Management &amp;rarr; Workplan Management Click +Add Workplan  First fill in the Workplan Config Section  Workplan Name: Unique Workplan name Workplan Admin Role: Choose the user group that will have access to entries in this workplan Workplan For: Entry Entry Type: Choose the entry type that this workplan will apply to   1.</description>
+    </item>
+    
+    <item>
+      <title>Evaluations</title>
+      <link>/applicationadmin/evaluations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/applicationadmin/evaluations/</guid>
+      <description>Evaluations Evaluations are an assessment on SPOON&amp;rsquo;s entries. There is a hierarchy of dependencies - Evaluation Templates need a Section Template and a Checklist Template, and a Checklist Template needs a Checklist Questions object. So if the Admin is making an evaluation form for the very first time, he/she will need to first create a Checklist Question, then a Checklist Template, then a Section Template.</description>
     </item>
     
   </channel>

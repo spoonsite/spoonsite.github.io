@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SPOON Site Documentation</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2020-03-09T11:43:29 MDT">
+<title>MongoDB Setup Guide :: SPOON Site Documentation</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
+
+  <link href="/theme-original/variant-blue.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
+<meta name="description" content="MongoDB Setup Guide">
+
+
+    
+  </head>
+  <body data-url="/dev/mongosetupguide/">
+    
+      <div id="headermain"></div>
+<nav id="sidebar" class="showVisitedLinks">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
+	
+  
+    <h4 style="color:white;">SPOON Documentation</h4>
+
+  
+
+
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "\/";
+        
+		</script>
+		<script type="text/javascript" src="/js/search.js"></script>
+  </div>
+
+      <ul class="topics">
+            <li data-nav-id="/" class="dd-item">
+            <a href="/"><i class="fa fa-fw fa-home"></i></a>
+            </li>
+    <li data-nav-id="/user/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/user/">User</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/user/howtoregister/" class="dd-item">
+        <div>
+          <a href="/user/howtoregister/">
+            How to Register an Account with Spoon
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/user/userguide/" class="dd-item">
+        <div>
+          <a href="/user/userguide/">
+            User Guide
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/user/unitlegend/" class="dd-item">
+        <div>
+          <a href="/user/unitlegend/">
+            Unit Legend
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/user/advancedsearching/" class="dd-item">
+        <div>
+          <a href="/user/advancedsearching/">
+            Advanced Searching
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/vendor/" class="dd-item
+        ">
+      <div>
+      <a href="/vendor/">Vendor</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/applicationadmin/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/applicationadmin/">Application Admin</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/applicationadmin/applicationmanagement/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/applicationmanagement/">
+            App Management
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/applicationadmin/branding/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/branding/">
+            Branding
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/applicationadmin/system/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/system/">
+            System
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/applicationadmin/securityroles/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/securityroles/">
+            Security Roles
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/applicationadmin/datamanagement/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/datamanagement/">
+            Data Management
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/applicationadmin/attributes/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/attributes/">
+            Attributes and Entry Types
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/applicationadmin/customsubmissionforms/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/customsubmissionforms/">
+            Custom Submission Forms
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/applicationadmin/userdata/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/userdata/">
+            User Data Management
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/applicationadmin/workplans/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/workplans/">
+            Workplans
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/applicationadmin/evaluations/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/evaluations/">
+            Evaluations
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/systemadmin/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/systemadmin/">System Admin</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/systemadmin/setup/" class="dd-item">
+        <div>
+          <a href="/systemadmin/setup/">
+            Setup
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/systemadmin/docker/" class="dd-item">
+        <div>
+          <a href="/systemadmin/docker/">
+            Docker
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/systemadmin/administratorguide/" class="dd-item">
+        <div>
+          <a href="/systemadmin/administratorguide/">
+            Administrator Guide
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/systemadmin/datamigrationguide/" class="dd-item">
+        <div>
+          <a href="/systemadmin/datamigrationguide/">
+            Data Migration Guide
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/systemadmin/versionmigrationguide/" class="dd-item">
+        <div>
+          <a href="/systemadmin/versionmigrationguide/">
+            Version Migration
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/tutorials/" class="dd-item
+        ">
+      <div>
+      <a href="/tutorials/">Tutorial Videos</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/dev/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/dev/">Developer</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/dev/developersguide/" class="dd-item">
+        <div>
+          <a href="/dev/developersguide/">
+            Developer Setup Guide
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dev/mongosetupguide/" class="dd-item active">
+        <div>
+          <a href="/dev/mongosetupguide/">
+            MongoDB Setup Guide
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dev/architecture/" class="dd-item">
+        <div>
+          <a href="/dev/architecture/">
+            Project Architecture
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+    <li data-nav-id="/dev/codestandards/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/dev/codestandards/">Coding Standards</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/dev/codestandards/front-end-code-standard/" class="dd-item">
+        <div>
+          <a href="/dev/codestandards/front-end-code-standard/">
+            Front-end Code Standards
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dev/codestandards/server-code-standard/" class="dd-item">
+        <div>
+          <a href="/dev/codestandards/server-code-standard/">
+            Server Code Standard
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/releasenotes/" class="dd-item
+        ">
+      <div>
+      <a href="/releasenotes/">Release Notes</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/summaryofspoon/" class="dd-item
+        ">
+      <div>
+      <a href="/summaryofspoon/">Features and Summary of SPOON</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+
+
+
+        <section id="shortcuts">
+                <li class="" role=""><h3>More</h3><a href="https://github.com/spoonsite/spoon/tree/master" target="_blank" rel="noopener"><i class='fa fa-github'></i> Github repo</a></li>
+                <li class="" role=""><a href="https://github.com/spoonsite/spoon/releases" target="_blank" rel="noopener"><i class='fa fa-download'></i> Releases</a></li>
+        </section>
+            <a id="clear-history" class="" href="#" data-clear-history-toggle=""><i class="fa  fa-history"></i> Clear History</a>
+
+    <hr />
+    <li></li>
+    
+    </ul>
+
+ <section id="footer"><div style="color: #E0E0DA;">
+    <p>SPOONsite version 2.12.0</p>
+    <p>Documentation generated on Mar 9, 2020</p>
+    <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.40.1</p>
+</div>
+    </section>
+  </div>
+</nav>
+
+
+
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    
+      
+      
+      
+    <div id="top-github-link">
+      <a class="github-link" href="https://github.com/spoonsite/spoon/edit/master/Hugo-StaticGen-Docs/content/dev/MongoSetupGuide.md" target="blank">
+        <i class="fa fa-code-fork"></i>
+        Improve this page
+      </a>
+    </div><div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+        <span class="links">
+        
+
+
+
+
+
+
+
+ <a href='/'>SPOON Documentation</a> > <a href='/dev/'>Developer</a> > MongoDB Setup Guide
+
+ 
+
+ 
+
+   
+        </span>
+    </div>
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    
+        </div>
+    </div>
+    
+
+  </div>
+
+
+<div id="body-inner">
+  
+    <h1>MongoDB Setup Guide</h1>
+  
+
+
+
+    
+    
+    
+    <p>This guide describes how to setup MongoDB in a docker container for development.
+</p>
+
+<h2 id="method-1-build-a-docker-container-with-a-dockerfile">Method #1: Build a Docker Container with a Dockerfile</h2>
+
+<p>Create a &quot;Dockerfile&quot; with the following contents:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Dockerfile" data-lang="Dockerfile"><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> mongo:4.2.0-bionic</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> mkdir -p /etc/mongo<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> echo <span style="color:#e6db74">&#34;net:\n    bindIp: 0.0.0.0\n    port: 27017&#34;</span> &gt; /etc/mongo/mongod.conf</code></pre></div>
+<div class="notices warning" ><p>Don't make a mongod.conf like this for production. <code>bindIp: 0.0.0.0</code> allows connections from anywhere and is not secure.</p>
+</div>
+
+
+<p>This docker file must be all by itself inside of its own directory.</p>
+
+<p>Now in the directory containing this file we need to run the following:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">docker build -t spoon-mongo .
+
+docker run -it --name some-mongo -p <span style="color:#ae81ff">27017</span>:27017 spoon-mongo --config /etc/mongo/mongod.conf</code></pre></div>
+<p>Finally you need to change some property lines inside of the openstorefront.properties file of your database directory.
+For example, the openstorefront.properties file might be found in: <code>C:\dev\SPOON_DATA\config</code>
+The following properties need to be added near the top of the file.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#a6e22e">db.use.mongo</span><span style="color:#f92672">=</span><span style="color:#e6db74">true</span>
+<span style="color:#a6e22e">mongo.database</span><span style="color:#f92672">=</span><span style="color:#e6db74">storefront</span></code></pre></div>
+<p>Now that you have performed all the above steps, you just need to shutdown your tomcat server and restart it along with elasticsearch. After a few minutes your spoonsite instance should be up and running along all the data found in the aforementioned directory.</p>
+
+<h2 id="method-2-mount-the-mongodconf-file-into-the-container">Method #2: Mount the mongod.conf file into the container</h2>
+
+<p>First you need to make a mongod.conf file and give it the following contents:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#75715e"># mongod.conf</span>
+net:
+   bindIp: <span style="color:#ae81ff">0.0</span>.<span style="color:#ae81ff">0.0</span>
+   port: <span style="color:#ae81ff">27017</span></code></pre></div>
+<p>Now that you have that file made, you need to take note of its parent directory location on disk.
+For example, the directory containing the file could be at <code>C:\dev\tempdir\</code>.</p>
+
+<p>Now you need to run the following command:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">docker run --name some-mongo -v C:<span style="color:#ae81ff">\d</span>ev<span style="color:#ae81ff">\t</span>empdir<span style="color:#ae81ff">\:</span>/etc/mongo -d mongo --config /etc/mongo/mongod.conf</code></pre></div>
+<p>You may have to resolve the issues with the choice of forward slashes and/or backslashes.</p>
+
+<p>Also remember you will still need to modify the openstorefront.properties file as mentioned above.
+Further you may need to add an additional property to the file:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#a6e22e">db.use.mongo</span><span style="color:#f92672">=</span><span style="color:#e6db74">true</span>
+<span style="color:#a6e22e">mongo.connection.url</span><span style="color:#f92672">=</span><span style="color:#e6db74">mongodb://&lt;your ip address&gt;</span>
+<span style="color:#a6e22e">mongo.database</span><span style="color:#f92672">=</span><span style="color:#e6db74">storefront</span></code></pre></div>
+<p>Further a Mongo inspector tool is nice to have, the following have been tested and work:</p>
+
+<ul>
+<li>Robo 3T</li>
+<li>NoSQLBooster for MonogDB</li>
+</ul>
+
+<p>Finally, should you want for more documentation see <a href="https://docs.docker.com/samples/library/mongo/">https://docs.docker.com/samples/library/mongo/</a></p>
+
+<h2 id="restore-data-to-the-database">Restore data to the database</h2>
+
+<p>You should have a backup of the database.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mkdir mongo-backup
+mongodump --db storefront --out mongo-backup/<span style="color:#e6db74">`</span>date +<span style="color:#e6db74">&#34;%m-%d-%y&#34;</span><span style="color:#e6db74">`</span></code></pre></div>
+<p>And then put that data inside the running docker container.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># copy the backup to the container
+</span><span style="color:#75715e"></span>docker cp <span style="color:#ae81ff">01</span>-08-20/. &lt;mongo container&gt;:/home
+
+<span style="color:#75715e"># get a shell to the running container
+</span><span style="color:#75715e"></span>docker exec -it &lt;mongo container&gt; bash
+
+<span style="color:#75715e"># now the shell is inside the docker container
+</span><span style="color:#75715e"></span>cd /home
+
+
+<span style="color:#75715e"># restore the backup &#34;storefront&#34; database
+</span><span style="color:#75715e"></span>mongorestore --db &lt;restored database&gt; --drop storefront</code></pre></div>
+<p>See the <a href="/systemadmin/datamigrationguide/">Mongo data migration guide</a></p>
+
+    
+    
+          <footer class=" footline" >
+	
+</footer>
+  </div>
+</div>
+
+<div id="navigation">
+<a class="nav nav-prev" href="/dev/developersguide/" title="Developer Setup Guide"> <i class="fa fa-chevron-left"></i><label>Developer Setup Guide</label></a>
+    <a class="nav nav-next" href="/dev/architecture/" title="Project Architecture" style="margin-right: 0px;"><label>Project Architecture</label><i class="fa fa-chevron-right"></i></a></div>
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
+
+<script src="/js/clipboard.min.js"></script>
+<script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
+
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

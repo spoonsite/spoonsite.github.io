@@ -5,8 +5,8 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-09-09T15:45:28 MDT">
-<title>Architecture :: SPOON Site Documentation</title>
+<meta name="revised" content="2020-03-09T11:43:29 MDT">
+<title>Project Architecture :: SPOON Site Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -74,10 +74,10 @@
       <a href="/user/">User</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/user/bulk-upload-process/" class="dd-item">
+      <li data-nav-id="/user/howtoregister/" class="dd-item">
         <div>
-          <a href="/user/bulk-upload-process/">
-            Bulk Upload Process
+          <a href="/user/howtoregister/">
+            How to Register an Account with Spoon
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -88,13 +88,6 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/user/quick-overview-of-submitting-a-new-component/" class="dd-item">
-        <div>
-          <a href="/user/quick-overview-of-submitting-a-new-component/">
-            Submitting a New Component
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
       <li data-nav-id="/user/unitlegend/" class="dd-item">
         <div>
           <a href="/user/unitlegend/">
@@ -102,7 +95,20 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
+      <li data-nav-id="/user/advancedsearching/" class="dd-item">
+        <div>
+          <a href="/user/advancedsearching/">
+            Advanced Searching
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
         </ul>
+    </li>
+    <li data-nav-id="/vendor/" class="dd-item
+        ">
+      <div>
+      <a href="/vendor/">Vendor</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
     </li>
     <li data-nav-id="/applicationadmin/" class="dd-item haschildren
         ">
@@ -110,10 +116,59 @@
       <a href="/applicationadmin/">Application Admin</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/applicationadmin/applicationmanagement/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/applicationmanagement/">
+            App Management
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/applicationadmin/branding/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/branding/">
+            Branding
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/applicationadmin/system/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/system/">
+            System
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/applicationadmin/securityroles/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/securityroles/">
+            Security Roles
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/applicationadmin/datamanagement/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/datamanagement/">
+            Data Management
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/applicationadmin/attributes/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/attributes/">
+            Attributes and Entry Types
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/applicationadmin/customsubmissionforms/" class="dd-item">
         <div>
           <a href="/applicationadmin/customsubmissionforms/">
             Custom Submission Forms
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/applicationadmin/userdata/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/userdata/">
+            User Data Management
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -124,10 +179,10 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/applicationadmin/securityroles/" class="dd-item">
+      <li data-nav-id="/applicationadmin/evaluations/" class="dd-item">
         <div>
-          <a href="/applicationadmin/securityroles/">
-            Security Roles
+          <a href="/applicationadmin/evaluations/">
+            Evaluations
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -176,6 +231,12 @@
     </li>
         </ul>
     </li>
+    <li data-nav-id="/tutorials/" class="dd-item
+        ">
+      <div>
+      <a href="/tutorials/">Tutorial Videos</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
     <li data-nav-id="/dev/" class="dd-item parent haschildren
         ">
       <div>
@@ -186,77 +247,59 @@
       <li data-nav-id="/dev/developersguide/" class="dd-item">
         <div>
           <a href="/dev/developersguide/">
-            Developer Guide
+            Developer Setup Guide
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dev/mongosetupguide/" class="dd-item">
+        <div>
+          <a href="/dev/mongosetupguide/">
+            MongoDB Setup Guide
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
       <li data-nav-id="/dev/architecture/" class="dd-item active">
         <div>
           <a href="/dev/architecture/">
-            Architecture
+            Project Architecture
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/dev/front-end-code-standard/" class="dd-item">
+    <li data-nav-id="/dev/codestandards/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/dev/codestandards/">Coding Standards</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/dev/codestandards/front-end-code-standard/" class="dd-item">
         <div>
-          <a href="/dev/front-end-code-standard/">
+          <a href="/dev/codestandards/front-end-code-standard/">
             Front-end Code Standards
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/dev/uiguide/" class="dd-item">
+      <li data-nav-id="/dev/codestandards/server-code-standard/" class="dd-item">
         <div>
-          <a href="/dev/uiguide/">
-            User Interface Guide
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/dev/server-code-standard/" class="dd-item">
-        <div>
-          <a href="/dev/server-code-standard/">
+          <a href="/dev/codestandards/server-code-standard/">
             Server Code Standard
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
         </ul>
     </li>
-    <li data-nav-id="/evaluations/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/evaluations/">Evaluations</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-        <ul>
-    <li data-nav-id="/evaluations/evaluator/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/evaluations/evaluator/">Evaluator</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/evaluations/evaluator/storefront-evaluators-guide/" class="dd-item">
-        <div>
-          <a href="/evaluations/evaluator/storefront-evaluators-guide/">
-            Evaluators Guide
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/evaluations/evaluator/faq/" class="dd-item">
-        <div>
-          <a href="/evaluations/evaluator/faq/">
-            FAQ
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
         </ul>
     </li>
-    <li data-nav-id="/evaluations/librarian/" class="dd-item haschildren
+    <li data-nav-id="/releasenotes/" class="dd-item
         ">
       <div>
-      <a href="/evaluations/librarian/">Librarian</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/releasenotes/">Release Notes</a><i class="fa fa-circle-thin read-icon"></i>
       </div>
-        <ul>
-        </ul>
     </li>
-        </ul>
+    <li data-nav-id="/summaryofspoon/" class="dd-item
+        ">
+      <div>
+      <a href="/summaryofspoon/">Features and Summary of SPOON</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
     </li>
 
 
@@ -273,9 +316,9 @@
     </ul>
 
  <section id="footer"><div style="color: #E0E0DA;">
-    <p>SPOONsite version 2.10</p>
-    <p>Documentation generated on Sep 9, 2019</p>
-    <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.54.0</p>
+    <p>SPOONsite version 2.12.0</p>
+    <p>Documentation generated on Mar 9, 2020</p>
+    <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.40.1</p>
 </div>
     </section>
   </div>
@@ -313,7 +356,7 @@
 
 
 
- <a href='/'>SPOON Documentation</a> > <a href='/dev/'>Developer</a> > Architecture
+ <a href='/'>SPOON Documentation</a> > <a href='/dev/'>Developer</a> > Project Architecture
 
  
 
@@ -328,24 +371,24 @@
         <div class="wrapper">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#1-client-architecture">1.  Client Architecture</a>
+<li>
 <ul>
-<li><a href="#1-1-client-architecture-diagram">1.1 Client Architecture Diagram</a></li>
-<li><a href="#1-2-client-details">1.2 Client Details</a></li>
+<li><a href="#client-architecture">Client Architecture</a>
+<ul>
+<li><a href="#client-details">Client Details</a></li>
 </ul></li>
-<li><a href="#2-server-architecture">2.  Server Architecture</a>
+<li><a href="#server-architecture">Server Architecture</a>
 <ul>
-<li><a href="#2-1-server-architecture-diagram">2.1 Server Architecture Diagram</a></li>
-<li><a href="#2-2-server-details">2.2 Server Details</a></li>
-<li><a href="#2-3-storage-details">2.3 Storage Details</a></li>
+<li><a href="#server-details">Server Details</a></li>
 </ul></li>
-<li><a href="#3-runtime-environment">3. Runtime Environment</a>
+<li><a href="#storage-details">Storage Details</a></li>
+<li><a href="#runtime-environment">Runtime Environment</a>
 <ul>
-<li><a href="#3-1-runtime-environment-diagram">3.1 Runtime Environment Diagram</a></li>
-<li><a href="#3-2-runtime-details">3.2 Runtime Details</a></li>
-<li><a href="#3-3-runtime-component-integration-vectors">3.3 Runtime Component Integration Vectors</a></li>
-<li><a href="#3-4-component-integration-vectors-details">3.4 Component Integration Vectors Details</a></li>
-<li><a href="#3-5-ports">3.5 Ports</a></li>
+<li><a href="#runtime-details">Runtime Details</a></li>
+<li><a href="#runtime-component-integration-vectors">Runtime Component Integration Vectors</a></li>
+<li><a href="#component-integration-vectors-details">Component Integration Vectors Details</a></li>
+<li><a href="#ports">Ports</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -358,7 +401,7 @@
 
 <div id="body-inner">
   
-    <h1>Architecture</h1>
+    <h1>Project Architecture</h1>
   
 
 
@@ -366,127 +409,180 @@
     
     
     
-    <p>This guide describes the high-level design of the server and client architecture.</p>
+    <p>This guide describes the high-level design of the server and client architecture.
+</p>
 
-<h1 id="1-client-architecture">1.  Client Architecture</h1>
+<h2 id="client-architecture">Client Architecture</h2>
 
-<h2 id="1-1-client-architecture-diagram">1.1 Client Architecture Diagram</h2>
 
-<p><img src="/images/client-archtechture-new.png" alt="clientarch" /></p>
+<figure>
+    
+        <img src="/images/client-archtechture-new.png" alt="Client Architecture Diagram" />
+    
+    
+    <figcaption>
+        <h4>Client Architecture Diagram</h4>
+        
+    </figcaption>
+    
+</figure>
 
-<p>Figure 1. Client Architecture Diagram</p>
 
-<h2 id="1-2-client-details">1.2 Client Details</h2>
+<h3 id="client-details">Client Details</h3>
 
-<p>The client core structure is based on Ext.js which provides UI components and utilities. This reduces third-part dependencies significantly which in turn reduce maintenance, learning curve and improves quality and consistency.</p>
+<p>The client core structure is based on Ext.js which provides UI components and utilities. This significantly reduces third-party dependencies which in turn reduces maintenance, shortens the learning curve, and improves quality and consistency.</p>
 
-<p>Added to that is application specific overrides and high-level components created to facilitate re-use.
+<p>In addition, there are application-specific overrides and high-level components created to facilitate reuse.
 The application is composed by stripes layouts with a top-level page and fragment tool pages.</p>
 
-<h1 id="2-server-architecture">2.  Server Architecture</h1>
+<h2 id="server-architecture">Server Architecture</h2>
 
-<h2 id="2-1-server-architecture-diagram">2.1 Server Architecture Diagram</h2>
 
-<p><img src="/images/serverarch.png" alt="serverarch" /></p>
+<figure>
+    
+        <img src="/images/serverarch.png" alt="Server Architecture Diagram" />
+    
+    
+    <figcaption>
+        <h4>Server Architecture Diagram</h4>
+        
+    </figcaption>
+    
+</figure>
 
-<p>Figure 2. Server Architecture Diagram</p>
 
-<h2 id="2-2-server-details">2.2 Server Details</h2>
+<h3 id="server-details">Server Details</h3>
 
-<p>Component definitions are as shown below:</p>
+<p>Component definitions are as follows:</p>
 
 <ul>
-<li><strong>Security</strong>        - Authentication and authorization is delegated to OpenAm. This is configured through a custom realm using the Apache Shiro library. All request are passed through this filter.</li>
-<li><strong>REST API</strong>       - The REST API is the component that handles the data interaction between the clients and provides the interface with which the clients can communicate. The REST API is broken into two sections: resources and services. Resources handle the CRUD operations on the data. Service handle operation across data sets. This provides a clean and clear API for integrators.</li>
-<li><strong>API Docs</strong>       - The API docs are generated live based on the currently running code. This keeps the documents always current and reduces maintenance. Other system related call backs (e.g., retrieving binary resources, login handling, etc.) are handled through the Stripes framework.</li>
-<li><strong>Business Layer</strong>  - Handles all rules applied to the data as well transaction support.
-<br /></li>
+<li><strong>Security</strong> - Authentication and authorization is delegated to OpenAM. This is configured through a custom realm using the Apache Shiro library. All requests are passed through this filter.</li>
+<li><strong>REST API</strong> - The REST API is the component that handles the data interaction between the clients and provides the interface through which the clients can communicate. The REST API (application programming interface) is broken into two sections: resources and services. Resources handle the CRUD (create, reade, update, and delete) operations on the data. Services handle operations across data sets. This provides a clean and clear API for integrators.</li>
+<li><strong>API Docs</strong> - The API docs are generated live based on the currently running code. This keeps the documents always current and reduces maintenance. Other system-related call-backs (e.g., retrieving binary resources, login handling, etc.) are handled through the Stripes framework.</li>
+<li><strong>Business Layer</strong>  - Handles all rules applied to the data as well transaction support.</li>
+<li><strong>Managers</strong> - The role of the manager class is to handle the interaction with a resource. This enables clean initialization and shutdown of resources and provides centralized access.</li>
+<li><strong>Services</strong> - Each service is in charge of handling a specific group of Entity models. Services provide transaction support and business logic handling. All services are accessed through a service proxy class.  The service proxy class provides auto transaction and service interception support.</li>
+<li><strong>Models</strong>  - The entity models represent the data in the system and provide the bridge from the application to the underlying storage.</li>
+<li><strong>Import / Export</strong> - Provides a mechanism for loading and transferring data from one system to another.</li>
 </ul>
-
-<blockquote>
-<ul>
-<li><strong>Managers</strong>   - The role of the manager class is to handle the interaction with a resource. This allow for clean initialization and shutdown of resources and provides centralized access.
-
-<ul>
-<li><strong>Services</strong>    - Each service is in charge of handling a specific group of Entity models. Services provide transaction support and business logic handling. All services are accessed through a service proxy class.  The service proxy class provides auto transaction and service interception support.</li>
-<li><strong>Models</strong>  - The entity models represent the data in the system and provide the bridge from the application to the underlying storage.<br /></li>
-<li><strong>Import / Export</strong> -Provides a mechanism for loading and transferring data from one system to another.</li>
-</ul></li>
-</ul>
-</blockquote>
 
 <p>The server build environment relies on the following platforms/tools:</p>
 
 <ul>
-<li><strong>Java</strong>     -            Core language and platform</li>
-<li><strong>Maven</strong>   -            Used for the project structure, building and dependency management</li>
+<li><strong>Java</strong> - Core language and platform</li>
+<li><strong>Maven</strong> - Used for the project structure, building, and dependency management</li>
 </ul>
 
-<h2 id="2-3-storage-details">2.3 Storage Details</h2>
+<h2 id="storage-details">Storage Details</h2>
 
-<p><img src="/images/storage.png" alt="storage" /></p>
 
-<p><strong>File System</strong>  - Holds configuration, resources, media, imports, reports and plugins.  By default under: /var/openstorefront it can be changed by setting the system property -Dapplication.datadir=<directory> on the command line.</p>
+<figure>
+    
+        <img src="/images/storage.png" alt="Storage Diagram" />
+    
+    
+    <figcaption>
+        <h4>Storage Diagram</h4>
+        
+    </figcaption>
+    
+</figure>
 
-<p><strong>Solr or Elasticsearch</strong> - Use to do fuzzy index searches across the entries.  It&rsquo;s kept in sync by the application.</p>
+
+<p><strong>File System</strong>  - Holds configuration, resources, media, imports, reports and plugins. By default, under <code>/var/openstorefront</code> it can be changed by setting the system property <code>-Dapplication.datadir=&lt;directory&gt;</code> on the command line.</p>
+
+<p><strong>Elasticsearch</strong> - Used to perform fuzzy index searches across the entries. It is kept in sync by the application.</p>
 
 <p><strong>Database</strong> - Holds all entry data and application data.</p>
 
-<h1 id="3-runtime-environment">3. Runtime Environment</h1>
+<h2 id="runtime-environment">Runtime Environment</h2>
 
-<h2 id="3-1-runtime-environment-diagram">3.1 Runtime Environment Diagram</h2>
 
-<p><img src="/images/deployarch.png" alt="deployarch" /></p>
+<figure>
+    
+        <img src="/images/deployarch.png" alt="Runtime Environment Diagram" />
+    
+    
+    <figcaption>
+        <h4>Runtime Environment Diagram</h4>
+        
+    </figcaption>
+    
+</figure>
 
-<p>Figure 3 . Runtime Environment diagram</p>
 
-<h2 id="3-2-runtime-details">3.2 Runtime Details</h2>
+<h3 id="runtime-details">Runtime Details</h3>
 
 <p>The runtime environment relies upon the following applications:</p>
 
 <ul>
-<li><strong>Proxy Server</strong>   -   This is an external system that proxies requests to the application server.</li>
-<li><strong>Tomcat 7</strong>  -    Tomcat is the web container used to host the storefront application.</li>
-<li><strong>Java 8</strong>  -            It the runtime platform which runs Tomcat</li>
-<li><strong>OS/VM</strong>  -             Is the host machines operating system</li>
-<li><strong>Solr</strong>          -    Enterprise search appliance that runs externally</li>
-<li><strong>OpenAM</strong>    -        OpenAM runs externally and a policy agent in Tomcat make sure the site is secure.</li>
+<li><strong>Proxy Server</strong> - This is an external system that proxies requests to the application server.</li>
+<li><strong>Tomcat 7</strong> - Tomcat is the web container used to host the storefront application.</li>
+<li><strong>Java 8</strong> - Is the runtime platform that runs Tomcat.</li>
+<li><strong>OS/VM</strong> - Is the host machines operating system.</li>
+<li><strong>OpenAM</strong> - OpenAM runs externally and a policy agent in Tomcat ensures the site is secure.</li>
 </ul>
 
-<h2 id="3-3-runtime-component-integration-vectors">3.3 Runtime Component Integration Vectors</h2>
+<h3 id="runtime-component-integration-vectors">Runtime Component Integration Vectors</h3>
 
-<p><img src="/images/civarch.png" alt="component vectors" /></p>
 
-<p>Figure 4. Runtime Component Integration Vectors</p>
+<figure>
+    
+        <img src="/images/civarch.png" alt="Runtime Component Integration Vectors" />
+    
+    
+    <figcaption>
+        <h4>Runtime Component Integration Vectors</h4>
+        
+    </figcaption>
+    
+</figure>
 
-<h2 id="3-4-component-integration-vectors-details">3.4 Component Integration Vectors Details</h2>
 
-<p>The component integration vectors (CIV) are show below.</p>
+<h3 id="component-integration-vectors-details">Component Integration Vectors Details</h3>
 
-<p><strong>Source Component</strong>:  openstorefront<br />
- <strong>Class</strong>:  C<br />
- <strong>Target Component</strong>:      Solr or Elasticsearch<br />
-<strong>Notes</strong></p>
+<p>The component integration vectors (CIV) are shown below.</p>
 
-<p><strong>Source Component</strong>:  openstorefront<br />
- <strong>Class</strong>:  C<br />
- <strong>Target Component</strong>:      OpenAM<br />
-<strong>Notes</strong>: OpenAM with their policy agent; requires a hard tie to the application and the application server</p>
+<table>
+<thead>
+<tr>
+<th>Source Component</th>
+<th>Class</th>
+<th>Target Component</th>
+<th>Notes</th>
+</tr>
+</thead>
 
-<p><strong>Source Component</strong>:  openstorefront<br />
- <strong>Class</strong>:  B<br />
- <strong>Target Component</strong>:      Solr or Elasticsearch<br />
-<strong>Notes</strong>: JEE Application Server   Currently configured to deploy on Tomcat</p>
+<tbody>
+<tr>
+<td>openstorefront</td>
+<td>C</td>
+<td>Elasticsearch</td>
+<td></td>
+</tr>
 
-<p><strong>Source Component</strong>:    Orient DB<br />
- <strong>Class</strong>:  B<br />
- <strong>Target Component</strong>:     openstorefront<br />
-<strong>Notes</strong>: Embedded</p>
+<tr>
+<td>openstorefront</td>
+<td>C</td>
+<td>OpenAM</td>
+<td>OpenAM with their policy agent requires a hard tie to the application and server</td>
+</tr>
 
-<p><strong>Source Component</strong>:   JEE Application Server<br />
- <strong>Class</strong>:  A<br />
- <strong>Target Component</strong>:      OS/VM<br />
-<strong>Notes</strong>: Currently targeted for CentOS</p>
+<tr>
+<td>openstorefront</td>
+<td>B</td>
+<td>Elasticsearch</td>
+<td>JEE Application Server currently configured to deploy on Tomcat</td>
+</tr>
+
+<tr>
+<td>JEE Application Server</td>
+<td>A</td>
+<td>OS/VM</td>
+<td>Currently targeted for CentOS</td>
+</tr>
+</tbody>
+</table>
 
 <hr />
 
@@ -498,57 +594,61 @@ A, and a target, Component B.</p>
 <ul>
 <li><p><strong>Class A: A-deployed On-B</strong>. Component B is the underlying
 environment (providing resources) for A; B does not actively manage
-A (e.g. OS, VM).</p></li>
+A (e.g., OS, VM).</p></li>
 
 <li><p><strong>Class B: A-contained In-B</strong>. Component &ldquo;lives in&rdquo;  B; B manages
-the lifecycle of A, from cradle to grave. (e.g. Widget in OWF; EJB
+the lifecycle of A, from cradle to grave. (e.g., Widget in OWF; EJB
 in JEE server; OSGi bundle in Karaf; SCA).</p></li>
 
 <li><p><strong>Class C: A-interfaces With-B</strong>. Component A initiates
 communication with B via API(s). (e.g., JDBC, JMS, REST/SOAP call,
-legacy communications)</p></li>
+legacy communications).</p></li>
 
 <li><p><strong>Class D: A-indirectly Consumes-B</strong>. Component A has a dependency
 o.n data/functionality of B even though it doesn&rsquo;t interface with B.
-(e.g. subscriber/publisher relationship; A integrates with another
+(e.g., subscriber/publisher relationship; A integrates with another
 component that offers data from B).</p></li>
 </ul>
 
-<h2 id="3-5-ports">3.5 Ports</h2>
+<h3 id="ports">Ports</h3>
 
 <p>The applicable ports are shown below:</p>
 
-<p><strong>Port (Defaults):</strong>  8080
-<strong>Description:</strong> Tomcat HTTP
-<strong>Type:</strong> Inbound</p>
+<table>
+<thead>
+<tr>
+<th>Port (Default)</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
 
-<p><strong>Port (Defaults):</strong>  8009
-<strong>Description:</strong> Tomcat AJP
-<strong>Type:</strong> Inbound  (Open if not using 8080)</p>
+<tbody>
+<tr>
+<td>8080</td>
+<td>Tomcat HTTP</td>
+<td>Inbound</td>
+</tr>
 
-<p><strong>Port (Defaults):</strong>  2424
-<strong>Description:</strong> OrientDB
-<strong>Type:</strong> Internal  (Shouldn&rsquo;t be exposed externally)</p>
+<tr>
+<td>8009</td>
+<td>Tomcat AJP</td>
+<td>Inbound (Open if not using 8080)</td>
+</tr>
 
-<p><strong>Port (Defaults):</strong>  2480
-<strong>Description:</strong> OrientDB
-<strong>Type:</strong> Internal  (Shouldn&rsquo;t be exposed externally)</p>
+<tr>
+<td>9200</td>
+<td>Elasticsearch (Accepts JSON)</td>
+<td>Outbound (Does not need to be exposed outside the system)</td>
+</tr>
 
-<p><strong>Port (Defaults):</strong>  8983
-<strong>Description:</strong> Solr (If used)
-<strong>Type:</strong> Outbound (Used internally doesn&rsquo;t need to be exposed outside the system)</p>
-
-<p><strong>Port (Defaults):</strong>  9300
-<strong>Description:</strong> Elasticsearch (If used; Binary and the one used by the application)
-<strong>Type:</strong> Outbound (Used internally does not need to be exposed outside the system)</p>
-
-<p><strong>Port (Defaults):</strong>  9200
-<strong>Description:</strong> Elasticsearch (If used; JSON)
-<strong>Type:</strong> Outbound (Used internally does not need to be exposed outside the system)</p>
-
-<p><strong>Port (Defaults):</strong>  8080
-<strong>Description:</strong> OpenAM running on Tomcat; Setups on this vary so this just represents one case
-<strong>Type:</strong> Outbound  (External application)</p>
+<tr>
+<td>9300</td>
+<td>Elasticsearch (Accepts Binary)</td>
+<td>Outbound (Does not need to be exposed outside the system)</td>
+</tr>
+</tbody>
+</table>
 
 <hr />
 
@@ -563,8 +663,8 @@ component that offers data from B).</p></li>
 </div>
 
 <div id="navigation">
-<a class="nav nav-prev" href="/dev/developersguide/" title="Developer Guide"> <i class="fa fa-chevron-left"></i><label>Developer Guide</label></a>
-    <a class="nav nav-next" href="/dev/front-end-code-standard/" title="Front-end Code Standards" style="margin-right: 0px;"><label>Front-end Code Standards</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/dev/mongosetupguide/" title="MongoDB Setup Guide"> <i class="fa fa-chevron-left"></i><label>MongoDB Setup Guide</label></a>
+    <a class="nav nav-next" href="/dev/codestandards/" title="Coding Standards" style="margin-right: 0px;"><label>Coding Standards</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

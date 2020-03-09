@@ -17,7 +17,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/systemadmin/setup/</guid>
-      <description>&lt;p&gt;These are instructions on how to get an instance of the site to run on your personal machine.&lt;/p&gt;</description>
+      <description>&lt;p&gt;These are instructions on how to get production instance of SPOON set up on a VM.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -26,8 +28,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/systemadmin/docker/</guid>
-      <description>The SPOON application contains a Dockerfile in order to build Docker images. There are two dockerfiles in the repo. One is for development which is used by Jenkins to deploy the application for testing of new features. The other dockerfile is for the release build. These can be found in the repo at https://github.com/spoonsite/spoon/tree/master/Docker.
-SPOON also automatically builds release versions of the application for consumption by users. These builds are available on Docker Hub.</description>
+      <description>&lt;p&gt;Information on running SPOON in a Docker container.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -36,7 +39,9 @@ SPOON also automatically builds release versions of the application for consumpt
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/systemadmin/administratorguide/</guid>
-      <description>&lt;p&gt;This article gives further instructions on setting up and configuring the web application.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This article gives further instructions on setting up and configuring the web application.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -45,8 +50,9 @@ SPOON also automatically builds release versions of the application for consumpt
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/systemadmin/datamigrationguide/</guid>
-      <description>&lt;p&gt;This guide provide help for importing data from external sources as well as
-moving data from one instance to another instance.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This guide provide help for importing data from external sources as well as moving data from one instance to another instance.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -55,7 +61,9 @@ moving data from one instance to another instance.&lt;/p&gt;</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/systemadmin/versionmigrationguide/</guid>
-      <description>&lt;p&gt;This guide details changes and upgrades that have happened from version to version.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This guide details changes and upgrades that have happened from version to version.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

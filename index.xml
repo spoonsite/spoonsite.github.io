@@ -12,30 +12,22 @@
     
     
     <item>
-      <title>Bulk Upload Process</title>
-      <link>/user/bulk-upload-process/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/user/bulk-upload-process/</guid>
-      <description>&lt;p&gt;You can bulk upload any kind of file to SPOON inside of a zipped folder.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Developer Guide</title>
+      <title>Developer Setup Guide</title>
       <link>/dev/developersguide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/dev/developersguide/</guid>
-      <description>&lt;p&gt;This guide goes over various issues developers would be concerned with, such as how to setup their IDE, what libraries are used, etc.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This guide describes various issues developers would be concerned with, such as how to set up their IDE (integrated development environment), what libraries are used, etc.
+&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Setup</title>
-      <link>/systemadmin/setup/</link>
+      <title>How to Register an Account with Spoon</title>
+      <link>/user/howtoregister/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/systemadmin/setup/</guid>
-      <description>&lt;p&gt;These are instructions on how to get an instance of the site to run on your personal machine.&lt;/p&gt;</description>
+      <guid>/user/howtoregister/</guid>
+      <description>And Troubleshooting  Registering for an account on Spoon is free and open to anyone regardless of nationality. Spoon only supports English, however.  Sign up, if you haven&amp;rsquo;t already. You will need to fill in your information first, then select &amp;ldquo;GET VERIFICATION CODE&amp;rdquo;, which will create your account and send a confirmation email to your stated email address. You will not be able to login to Spoon until you click the confirmation link sent in the email.</description>
     </item>
     
     <item>
@@ -44,43 +36,29 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/user/userguide/</guid>
-      <description>&lt;p&gt;The user guide is in the application help system.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This is a guide to help users use SPOON.
+&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Architecture</title>
-      <link>/dev/architecture/</link>
+      <title>MongoDB Setup Guide</title>
+      <link>/dev/mongosetupguide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/architecture/</guid>
-      <description>&lt;p&gt;This guide describes the high-level design of the server and client architecture.&lt;/p&gt;</description>
+      <guid>/dev/mongosetupguide/</guid>
+      <description>&lt;p&gt;This guide describes how to setup MongoDB in a docker container for development.
+&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Custom Submission Forms</title>
-      <link>/applicationadmin/customsubmissionforms/</link>
+      <title>Setup</title>
+      <link>/systemadmin/setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/applicationadmin/customsubmissionforms/</guid>
-      <description>&lt;p&gt;Custom Submission Forms are used when you want to present a custom look and feel to the user when they submit an entry.  You can add a form with many required or optional fields depending on the Entry Type of the submission.  This form is then shown to the user when they are presented with the fields for a new entry of that type.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Submitting a New Component</title>
-      <link>/user/quick-overview-of-submitting-a-new-component/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/user/quick-overview-of-submitting-a-new-component/</guid>
-      <description>&lt;p&gt;This article briefly explains how to submit an entry onto SPOON&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Workplans</title>
-      <link>/applicationadmin/workplans/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/applicationadmin/workplans/</guid>
-      <description>&lt;p&gt;This guide reviews how to create and manage a workplan.&lt;/p&gt;</description>
+      <guid>/systemadmin/setup/</guid>
+      <description>&lt;p&gt;These are instructions on how to get production instance of SPOON set up on a VM.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -89,26 +67,29 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/systemadmin/docker/</guid>
-      <description>The SPOON application contains a Dockerfile in order to build Docker images. There are two dockerfiles in the repo. One is for development which is used by Jenkins to deploy the application for testing of new features. The other dockerfile is for the release build. These can be found in the repo at https://github.com/spoonsite/spoon/tree/master/Docker.
-SPOON also automatically builds release versions of the application for consumption by users. These builds are available on Docker Hub.</description>
+      <description>&lt;p&gt;Information on running SPOON in a Docker container.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Front-end Code Standards</title>
-      <link>/dev/front-end-code-standard/</link>
+      <link>/dev/codestandards/front-end-code-standard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/front-end-code-standard/</guid>
-      <description>&lt;p&gt;These are the agreed-upon standards for this project.&lt;/p&gt;</description>
+      <guid>/dev/codestandards/front-end-code-standard/</guid>
+      <description>&lt;p&gt;These are the code standards for this project.
+&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Unit Legend</title>
-      <link>/user/unitlegend/</link>
+      <title>Project Architecture</title>
+      <link>/dev/architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/user/unitlegend/</guid>
-      <description>&lt;p&gt;This is the legend for commonly confused unit names and acronyms.&lt;/p&gt;</description>
+      <guid>/dev/architecture/</guid>
+      <description>&lt;p&gt;This guide describes the high-level design of the server and client architecture.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -117,7 +98,9 @@ SPOON also automatically builds release versions of the application for consumpt
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/systemadmin/administratorguide/</guid>
-      <description>&lt;p&gt;This article gives further instructions on setting up and configuring the web application.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This article gives further instructions on setting up and configuring the web application.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -126,17 +109,9 @@ SPOON also automatically builds release versions of the application for consumpt
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/systemadmin/datamigrationguide/</guid>
-      <description>&lt;p&gt;This guide provide help for importing data from external sources as well as
-moving data from one instance to another instance.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>User Interface Guide</title>
-      <link>/dev/uiguide/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/dev/uiguide/</guid>
-      <description>&lt;p&gt;These are general guidelines on what the look of SPOON should be.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This guide provide help for importing data from external sources as well as moving data from one instance to another instance.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -145,16 +120,59 @@ moving data from one instance to another instance.&lt;/p&gt;</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/systemadmin/versionmigrationguide/</guid>
-      <description>&lt;p&gt;This guide details changes and upgrades that have happened from version to version.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This guide details changes and upgrades that have happened from version to version.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Server Code Standard</title>
-      <link>/dev/server-code-standard/</link>
+      <link>/dev/codestandards/server-code-standard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dev/server-code-standard/</guid>
-      <description>&lt;p&gt;These are special notes when making additions to the server-side code.&lt;/p&gt;</description>
+      <guid>/dev/codestandards/server-code-standard/</guid>
+      <description>&lt;p&gt;These are special notes when making additions to the server-side code.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>App Management</title>
+      <link>/applicationadmin/applicationmanagement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/applicationadmin/applicationmanagement/</guid>
+      <description>Table of Contents  Alerts Feedback Jobs Messages Tracking User Management Reports  Sections not covered in this page:
+ Branding Security Security Roles System  Alerts Customized alerts can be set up to send an email to a specified email address. You can see what events are available to trigger alerts by clicking Add.
+Feedback SPOON users can submit feedback by clicking on their Username in the top right corner of SPOON, then clicking Contact Us.</description>
+    </item>
+    
+    <item>
+      <title>Unit Legend</title>
+      <link>/user/unitlegend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/unitlegend/</guid>
+      <description>This is the legend for commonly confused unit names and acronyms.    Symbol Base unit Description     &#39;$&#39; US Dollar 1 US dollar   &#39;G&#39; Gauss 1 Gauss   &#39;GB&#39; Byte $10^9$ bytes (Gigabyte)   &#39;Gb&#39; Bit $10^9$ bits (Gigabit)   &#39;Gbps&#39; Bit Per Second $10^9 \frac{\text{bits}}{\text{sec}}$   &#39;Grav&#39; Newtonian constant of gravitation    &#39;MB&#39; Byte $10^6$ bytes (Megabyte)   &#39;MIPS&#39; Million of Instructions Per Second $10^6$ $\frac{\text{instruction}}{\text{second}}$   &#39;Mb&#39; Bit $10^6$ bits (Megabit)   &#39;Mbps&#39; Bit Per Second $10^6 \frac{\text{bits}}{\text{sec}}$   &#39;PB&#39; Byte $10^{15}$ bytes (Petabyte)   &#39;Pb&#39; Bit $10^{15}$ bits (Petabit)   &#39;TB&#39; Byte $10^{12}$ bytes (Terabyte)   &#39;Tb&#39; Bit $10^{12}$ bits (Terabit)   &#39;arcsec&#39; Degree $\frac{1}{3600}$ degree   &#39;arcsmin&#39; Degree $\frac{1}{60}$ degree   &#39;bps&#39; Bit Per Second 1 $\frac{\text{bit}}{\text{sec}}$   &#39;dBW&#39; Decibel Watt 1 decibel Watt   &#39;dBm&#39; Decibel Watt $10^{-6}$ decibel Watt (Decibel milli-Watt)   &#39;dbC&#39; Decibel 1 Decibel   &#39;dbc&#39; Decibel 1 Decibel   &#39;dbd&#39; Decibel 1 Decibel   &#39;dbi&#39; Decibel 1 Decibel   &#39;deg&#39; or &#39;°&#39; Degree 1 degree   &#39;g&#39; Gram 1 gram   &#39;grms&#39; or &#39;Grms&#39; Root-Mean-Square Acceleration    &#39;hr&#39; or &#39;hour&#39; Hour 1 hour   &#39;inch&#39; inch 1 inch   &#39;kB&#39; or &#39;KB&#39; Byte $10^3$ bytes (Kilobyte)   &#39;kb&#39; or &#39;Kb&#39; Bit $10^3$ bits (Kilobit)   &#39;kbps&#39; Bit Per Second $10^3 \frac{\text{bits}}{\text{sec}}$   &#39;mG&#39; Gauss $10^{-6}$ Gauss (microGauss)   &#39;mGrav&#39; Grav $10^{-6}$ Grav (microGrav)   &#39;micron&#39; or &#39;μm&#39; Meter $10^{-6}$ meter (micrometer)   &#39;psi&#39; Pounds Per Square Inch 1 $\frac{\text{lbs}}{\text{in}^2}$   &#39;rpm&#39; or &#39;RPM&#39; Revolution Per Minute 1 $\frac{\text{revolution}}{\text{Minute}}$   &#39;μN&#39; Newton $10^{-6}$ Newton (microNewton)   &#39;μm&#39; Gram $10^{-6}$ gram (Microgram)   &#39;μs&#39; Second $10^{-6}$ second (Microsecond)    JScience Semantics When attempting to use a superscript fraction as an attribute (ex.</description>
+    </item>
+    
+    <item>
+      <title>Branding</title>
+      <link>/applicationadmin/branding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/applicationadmin/branding/</guid>
+      <description>Table of Contents  General Login Page Support Security Colors/Logos Current CSS  When updating or changing branding, you must toggle it back on. When a branding is created or edited it is automatically turned off. A branding is active only if the status column has an &amp;ldquo;A&amp;rdquo; in it or if the name has &amp;ldquo;active&amp;rdquo; next to it.
+ The Branding Form General Be aware of the fact that text color is preserved from the input boxes on this page to the destinations of the content.</description>
+    </item>
+    
+    <item>
+      <title>System</title>
+      <link>/applicationadmin/system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/applicationadmin/system/</guid>
+      <description>Table of Contents  Error Tickets Application State Properties System Configuration Properties Logs and Logging Plugins Cache Search Control Recent Changes Email Managers Heap Memory Memory Pools Garbage Collection  The System page provides information about the system SPOON is running on like memory usage, cache management, and error logs.
+Note that on this page, and every sub-page of the System page, the &amp;ldquo;Refresh&amp;rdquo; button does nothing but send a new request to the server for the sub-page displayed - it does not edit or &amp;ldquo;refresh&amp;rdquo; any data object selected at the time.</description>
     </item>
     
     <item>
@@ -163,43 +181,81 @@ moving data from one instance to another instance.&lt;/p&gt;</description>
       <pubDate>Wed, 27 Feb 2019 11:30:53 -0700</pubDate>
       
       <guid>/applicationadmin/securityroles/</guid>
-      <description>&lt;p&gt;Security Roles define what permissions users get in the application.  Several default roles are set up with default permissions and are listed below.  These can be reset to default or altered as needed.  New roles can also be added.&lt;/p&gt;</description>
+      <description>Table of Contents  Default Roles and Resetting to Default Default Permissions (300+) Overlapping Permissions Default Data Restrictions  Default Roles and Resetting to Default When setting up an instance of SPOON it comes with a few default roles as described below and as shown in Admin Tools &amp;rarr; Application Management &amp;rarr; Security Roles on the website (must be logged in as an administrator to view).
+   SECURITY ROLE NAME EXPLANATION DEFAULT PERMISSIONS NOTES     GUEST-GROUP Permissions for guest when they come to the site directly via URL, such as to view an entry.</description>
     </item>
     
     <item>
-      <title>Evaluators Guide</title>
-      <link>/evaluations/evaluator/storefront-evaluators-guide/</link>
+      <title>Data Management</title>
+      <link>/applicationadmin/datamanagement/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/evaluations/evaluator/storefront-evaluators-guide/</guid>
-      <description>&lt;p&gt;This is a complete overview of the user interface to make an Evaluation on SPOON.&lt;/p&gt;</description>
+      <guid>/applicationadmin/datamanagement/</guid>
+      <description>Table of Contents  Frequently Asked Question Support Media Highlights Lookups Media Relationships  Frequently Asked Questions This list of questions is accessible to each user and should hold a couple of common questions.
+Support Media In the top right site menu there is a &amp;ldquo;Tutorials&amp;rdquo; button that shows the list of video tutorials uploaded onto SPOON. All this information is provided externally, on this site (spoonsite.github.io)
+Highlights &amp;ldquo;Highlights&amp;rdquo; is the name of SPOON&amp;rsquo;s carousel home-page widget.</description>
     </item>
     
     <item>
-      <title>FAQ</title>
-      <link>/evaluations/evaluator/faq/</link>
+      <title>Attributes and Entry Types</title>
+      <link>/applicationadmin/attributes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/evaluations/evaluator/faq/</guid>
-      <description>&lt;p&gt;Frequently Asked Questions by/for Evaluators&lt;/p&gt;</description>
+      <guid>/applicationadmin/attributes/</guid>
+      <description>Attributes Entries Entry Types Submission Form Templates Partial Submissions  Attributes An &amp;ldquo;attribute&amp;rdquo; on SPOON is an entry specification, for example height, width, or length of a part.
+If you want to add a new attribute or edit an existing one, click Add New Type or Edit Attribute respectively and a popup with options will appear.
+   Edit Attribute Fields EXPLANATION     Label The label is the name of the attribute that a user would actually see   Type Code The Type Code is the attribute ID that is used internally to keep track of this attribute; as such this should be unique.</description>
     </item>
     
     <item>
-      <title>Create an Evaluation</title>
-      <link>/evaluations/librarian/createevaluationguide/</link>
+      <title>Custom Submission Forms</title>
+      <link>/applicationadmin/customsubmissionforms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/evaluations/librarian/createevaluationguide/</guid>
-      <description>&lt;p&gt;This guide goes over creating Section templates, Checklist questions and templates, and Evaluation templates.  This guide assumes a librarian has a basic understanding of what an entry is and has an entry that needs to be evaluated.  Once the librarian has created checklists and templates, an evaluation can be created.&lt;/p&gt;</description>
+      <guid>/applicationadmin/customsubmissionforms/</guid>
+      <description>Create a Custom Form This is how to create a custom submission form for new submissions.
+Create Needed Attributes Before a form can be designed, any required or custom attributes should be added. To do this:
+ Navigate to Admin Tools if you are not already there (click on your username in the upper-right, then Admin Tools Select Data Management &amp;rarr; Attributes Click +Add New Type and fill out the form as required for all attributes (required and optional) you will need to build your custom entry form in the next step.</description>
     </item>
     
     <item>
-      <title>Publish an Evaluation</title>
-      <link>/evaluations/librarian/publishinganevaluationguide/</link>
+      <title>User Data Management</title>
+      <link>/applicationadmin/userdata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/evaluations/librarian/publishinganevaluationguide/</guid>
-      <description>&lt;p&gt;This guide goes over the different types of publishing and the various scenarios a librarian may run into when publishing an entry/evaluation.&lt;/p&gt;</description>
+      <guid>/applicationadmin/userdata/</guid>
+      <description>Table of Contents  Contacts Organizations Questions Reviews Watches Tags User Profiles  Contacts Entries on SPOON can have a designated &amp;ldquo;Contact&amp;rdquo;, a person who is the point of contact for that particular entry.
+Organizations Here you can see all the registered organizations on SPOON. There are tools for merging organizations when duplicates are found.
+Questions Users can ask questions to an entry&amp;rsquo;s contacts, but before the question shows up publicly on SPOON, it must be approved by the Admin.</description>
+    </item>
+    
+    <item>
+      <title>Workplans</title>
+      <link>/applicationadmin/workplans/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/applicationadmin/workplans/</guid>
+      <description>Create a new Workplan A step-by-step guide to creating a workplan.
+Create the Workplan  Navigate to Admin Tools if you are not already there (click your username in the upper-right, then Admin Tools) Select Data Management &amp;rarr; Workplan Management Click +Add Workplan  First fill in the Workplan Config Section  Workplan Name: Unique Workplan name Workplan Admin Role: Choose the user group that will have access to entries in this workplan Workplan For: Entry Entry Type: Choose the entry type that this workplan will apply to   1.</description>
+    </item>
+    
+    <item>
+      <title>Evaluations</title>
+      <link>/applicationadmin/evaluations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/applicationadmin/evaluations/</guid>
+      <description>Evaluations Evaluations are an assessment on SPOON&amp;rsquo;s entries. There is a hierarchy of dependencies - Evaluation Templates need a Section Template and a Checklist Template, and a Checklist Template needs a Checklist Questions object. So if the Admin is making an evaluation form for the very first time, he/she will need to first create a Checklist Question, then a Checklist Template, then a Section Template.</description>
+    </item>
+    
+    <item>
+      <title>Advanced Searching</title>
+      <link>/user/advancedsearching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user/advancedsearching/</guid>
+      <description>A guide to advanced searching. Searching Application Search provides a way to find entry lists and articles matching search criteria. Several types of searches are supported. The types of searches that can be performed are:
+ Searching across multiple fields (entry name and description, tags, attribute types, codes, and descriptions) Wildcard searching (* and ?) Exact phrase searching Case insensitivity Filtered searches Tags Comparison Customization of the display  Note: The type ahead on the search field only looks at the title to see if it contains the text.</description>
     </item>
     
     <item>

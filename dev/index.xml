@@ -12,48 +12,33 @@
     
     
     <item>
-      <title>Developer Guide</title>
+      <title>Developer Setup Guide</title>
       <link>/dev/developersguide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/dev/developersguide/</guid>
-      <description>&lt;p&gt;This guide goes over various issues developers would be concerned with, such as how to setup their IDE, what libraries are used, etc.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This guide describes various issues developers would be concerned with, such as how to set up their IDE (integrated development environment), what libraries are used, etc.
+&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Architecture</title>
+      <title>MongoDB Setup Guide</title>
+      <link>/dev/mongosetupguide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dev/mongosetupguide/</guid>
+      <description>&lt;p&gt;This guide describes how to setup MongoDB in a docker container for development.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Project Architecture</title>
       <link>/dev/architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/dev/architecture/</guid>
-      <description>&lt;p&gt;This guide describes the high-level design of the server and client architecture.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Front-end Code Standards</title>
-      <link>/dev/front-end-code-standard/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/dev/front-end-code-standard/</guid>
-      <description>&lt;p&gt;These are the agreed-upon standards for this project.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>User Interface Guide</title>
-      <link>/dev/uiguide/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/dev/uiguide/</guid>
-      <description>&lt;p&gt;These are general guidelines on what the look of SPOON should be.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Server Code Standard</title>
-      <link>/dev/server-code-standard/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/dev/server-code-standard/</guid>
-      <description>&lt;p&gt;These are special notes when making additions to the server-side code.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This guide describes the high-level design of the server and client architecture.
+&lt;/p&gt;</description>
     </item>
     
   </channel>

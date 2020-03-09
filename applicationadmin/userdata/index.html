@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SPOON Site Documentation</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2020-03-09T11:43:29 MDT">
+<title>User Data Management :: SPOON Site Documentation</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
+
+  <link href="/theme-original/variant-blue.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
+<meta name="description" content="">
+
+
+    
+  </head>
+  <body data-url="/applicationadmin/userdata/">
+    
+      <div id="headermain"></div>
+<nav id="sidebar" class="showVisitedLinks">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
+	
+  
+    <h4 style="color:white;">SPOON Documentation</h4>
+
+  
+
+
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "\/";
+        
+		</script>
+		<script type="text/javascript" src="/js/search.js"></script>
+  </div>
+
+      <ul class="topics">
+            <li data-nav-id="/" class="dd-item">
+            <a href="/"><i class="fa fa-fw fa-home"></i></a>
+            </li>
+    <li data-nav-id="/user/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/user/">User</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/user/howtoregister/" class="dd-item">
+        <div>
+          <a href="/user/howtoregister/">
+            How to Register an Account with Spoon
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/user/userguide/" class="dd-item">
+        <div>
+          <a href="/user/userguide/">
+            User Guide
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/user/unitlegend/" class="dd-item">
+        <div>
+          <a href="/user/unitlegend/">
+            Unit Legend
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/user/advancedsearching/" class="dd-item">
+        <div>
+          <a href="/user/advancedsearching/">
+            Advanced Searching
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/vendor/" class="dd-item
+        ">
+      <div>
+      <a href="/vendor/">Vendor</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/applicationadmin/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/applicationadmin/">Application Admin</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/applicationadmin/applicationmanagement/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/applicationmanagement/">
+            App Management
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/applicationadmin/branding/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/branding/">
+            Branding
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/applicationadmin/system/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/system/">
+            System
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/applicationadmin/securityroles/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/securityroles/">
+            Security Roles
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/applicationadmin/datamanagement/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/datamanagement/">
+            Data Management
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/applicationadmin/attributes/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/attributes/">
+            Attributes and Entry Types
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/applicationadmin/customsubmissionforms/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/customsubmissionforms/">
+            Custom Submission Forms
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/applicationadmin/userdata/" class="dd-item active">
+        <div>
+          <a href="/applicationadmin/userdata/">
+            User Data Management
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/applicationadmin/workplans/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/workplans/">
+            Workplans
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/applicationadmin/evaluations/" class="dd-item">
+        <div>
+          <a href="/applicationadmin/evaluations/">
+            Evaluations
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/systemadmin/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/systemadmin/">System Admin</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/systemadmin/setup/" class="dd-item">
+        <div>
+          <a href="/systemadmin/setup/">
+            Setup
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/systemadmin/docker/" class="dd-item">
+        <div>
+          <a href="/systemadmin/docker/">
+            Docker
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/systemadmin/administratorguide/" class="dd-item">
+        <div>
+          <a href="/systemadmin/administratorguide/">
+            Administrator Guide
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/systemadmin/datamigrationguide/" class="dd-item">
+        <div>
+          <a href="/systemadmin/datamigrationguide/">
+            Data Migration Guide
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/systemadmin/versionmigrationguide/" class="dd-item">
+        <div>
+          <a href="/systemadmin/versionmigrationguide/">
+            Version Migration
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/tutorials/" class="dd-item
+        ">
+      <div>
+      <a href="/tutorials/">Tutorial Videos</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/dev/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/dev/">Developer</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/dev/developersguide/" class="dd-item">
+        <div>
+          <a href="/dev/developersguide/">
+            Developer Setup Guide
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dev/mongosetupguide/" class="dd-item">
+        <div>
+          <a href="/dev/mongosetupguide/">
+            MongoDB Setup Guide
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dev/architecture/" class="dd-item">
+        <div>
+          <a href="/dev/architecture/">
+            Project Architecture
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+    <li data-nav-id="/dev/codestandards/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/dev/codestandards/">Coding Standards</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/dev/codestandards/front-end-code-standard/" class="dd-item">
+        <div>
+          <a href="/dev/codestandards/front-end-code-standard/">
+            Front-end Code Standards
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dev/codestandards/server-code-standard/" class="dd-item">
+        <div>
+          <a href="/dev/codestandards/server-code-standard/">
+            Server Code Standard
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/releasenotes/" class="dd-item
+        ">
+      <div>
+      <a href="/releasenotes/">Release Notes</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/summaryofspoon/" class="dd-item
+        ">
+      <div>
+      <a href="/summaryofspoon/">Features and Summary of SPOON</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+
+
+
+        <section id="shortcuts">
+                <li class="" role=""><h3>More</h3><a href="https://github.com/spoonsite/spoon/tree/master" target="_blank" rel="noopener"><i class='fa fa-github'></i> Github repo</a></li>
+                <li class="" role=""><a href="https://github.com/spoonsite/spoon/releases" target="_blank" rel="noopener"><i class='fa fa-download'></i> Releases</a></li>
+        </section>
+            <a id="clear-history" class="" href="#" data-clear-history-toggle=""><i class="fa  fa-history"></i> Clear History</a>
+
+    <hr />
+    <li></li>
+    
+    </ul>
+
+ <section id="footer"><div style="color: #E0E0DA;">
+    <p>SPOONsite version 2.12.0</p>
+    <p>Documentation generated on Mar 9, 2020</p>
+    <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.40.1</p>
+</div>
+    </section>
+  </div>
+</nav>
+
+
+
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    
+      
+      
+      
+    <div id="top-github-link">
+      <a class="github-link" href="https://github.com/spoonsite/spoon/edit/master/Hugo-StaticGen-Docs/content/applicationadmin/UserData.md" target="blank">
+        <i class="fa fa-code-fork"></i>
+        Improve this page
+      </a>
+    </div><div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+        <span class="links">
+        
+
+
+
+
+
+
+
+ <a href='/'>SPOON Documentation</a> > <a href='/applicationadmin/'>Application Admin</a> > User Data Management
+
+ 
+
+ 
+
+   
+        </span>
+    </div>
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#contacts">Contacts</a></li>
+<li><a href="#organizations">Organizations</a></li>
+<li><a href="#questions">Questions</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#watches">Watches</a></li>
+<li><a href="#tags">Tags</a></li>
+<li><a href="#user-profiles">User Profiles</a></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+    </div>
+    
+
+  </div>
+
+
+<div id="body-inner">
+  
+    <h1>User Data Management</h1>
+  
+
+
+
+    
+    
+    
+    
+
+<p><img src="/images/AppAdmin/UserDataManagementMapping.png" alt="Diagram of main System sub-page" /></p>
+
+<h2 id="table-of-contents">Table of Contents</h2>
+
+<ol>
+<li><a href="/applicationadmin/userdata/#contacts">Contacts</a></li>
+<li><a href="/applicationadmin/userdata/#organizations">Organizations</a></li>
+<li><a href="/applicationadmin/userdata/#questions">Questions</a></li>
+<li><a href="/applicationadmin/userdata/#reviews">Reviews</a></li>
+<li><a href="/applicationadmin/userdata/#watches">Watches</a></li>
+<li><a href="/applicationadmin/userdata/#tags">Tags</a></li>
+<li><a href="/applicationadmin/userdata/#user-profiles">User Profiles</a></li>
+</ol>
+
+<h2 id="contacts">Contacts</h2>
+
+<p>Entries on SPOON can have a designated &ldquo;Contact&rdquo;, a person who is the point of contact for that particular entry.</p>
+
+<h2 id="organizations">Organizations</h2>
+
+<p>Here you can see all the registered organizations on SPOON. There are tools for merging organizations when duplicates are found.</p>
+
+<h2 id="questions">Questions</h2>
+
+<p>Users can ask questions to an entry&rsquo;s contacts, but before the question shows up publicly on SPOON, it must be approved by the Admin.</p>
+
+<table>
+<thead>
+<tr>
+<th align="right">QUESTION/ANSWER STATUS</th>
+<th>EXPLANATION</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="right">Pending Questions/Answers</td>
+<td>All newly created questions (i.e. created by users, that is) are viewable here. While a question is marked as a Pending Question, it is not visible to anyone but the user who posed the question. <strong>The Admin will NOT receive any notification when a new question is placed.</strong> After a question has been asked, the Admin must <em>explicitly click the Question</em> in the question queue to load answers to that question into the <strong>Answers</strong> queue on the far right column. <strong>The Admin will NOT receive any notifications when a new answer is placed.</strong> Any edits to the question/answer by a user will reset the status of that question/answer to Pending.</td>
+</tr>
+
+<tr>
+<td align="right">Active Questions/Answers</td>
+<td>Setting a question/answer as being &ldquo;Active&rdquo; makes it visible to everyone</td>
+</tr>
+
+<tr>
+<td align="right">Inactive Questions/Answers</td>
+<td>Inactivating the question/answer archives it. Even the user who placed the question/answer will not be able to see it when he/she looks at the entry.</td>
+</tr>
+</tbody>
+</table>
+
+<p>Also note that questions/answers made by the administrators are treated the same as a regular user: they must be approved through this process.</p>
+
+<h2 id="reviews">Reviews</h2>
+
+<p>On the Review page the Admin must approve any Reviews on entries that are submitted by members.</p>
+
+<p>Note the small <strong>Active Status</strong> dropdown in the top left corner. If you expect to see an item in the grid below but don&rsquo;t, you may be looking at the wrong Status for the Review you are seeking.</p>
+
+<table>
+<thead>
+<tr>
+<th align="right">REVIEW STATUS</th>
+<th>EXPLANATION</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="right">Pending</td>
+<td>All newly created reviews (i.e., created by users) are viewable here. While a question is marked as a Pending Question, it is not visible to anyone but the user who posed the question. <strong>The Admin will NOT receive any notification when a new question is placed.</strong> After a question has been asked, the Admin must explicitly click the Question in the question queue to load answers to that question into the Answers queue on the far right column. Any edits to the question/answer by a user will reset the status of that question/answer to Pending.</td>
+</tr>
+
+<tr>
+<td align="right">Active Questions/Answers</td>
+<td>Setting a question/answer as being “Active” makes it visible to everyone.</td>
+</tr>
+
+<tr>
+<td align="right">Inactive Questions/Answers</td>
+<td>Inactivating the question/answer archives it. Even the user who placed the question/answer will not be able to see it when he/she looks at the entry.</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="watches">Watches</h2>
+
+<p><img src="/images/AppAdmin/UserDataWatches.png" alt="Watches page screenshot" />
+All watches created by all users are visible here. The Admin can toggle off watches on any user, which makes the watch disappear (from the user&rsquo;s perspective).</p>
+
+<h2 id="tags">Tags</h2>
+
+<p><img src="/images/AppAdmin/UserDataTags.png" alt="Tags page screenshot" />
+Any user can add or remove tags from an entry; no Admin approval is required whatsoever (with exception of entries that said user could not see in the first place, such as entries that have security restrictions).</p>
+
+<p>The <strong>Select A Tag</strong> column lists all the tags that currently exist on SPOON.</p>
+
+<div class="notices info" ><p>A tag cannot exist unless it is assigned to at least one entry at a time. Be careful when un-assigning parts from a tag not to remove all of them all at once if you want to keep that tag. The only exception to this rule is when the Admin creates a brand new tag by clicking the <strong>Add</strong> button - then the Admin can assign parts to a tag that previously had no existing assignments. Otherwise, the tag will decease.</p>
+</div>
+
+
+<p>Selecting a tag populates the <strong>Associated Entries</strong> and <strong>Unassociated Entries</strong> columns on the right. If, upon checking the database, it is found that some entry the tag is assigned to is not submitted, pending, inactive, or not approved, <em>that entry is not placed in either column</em>. This can present a difficult scenario if the Admin needs to determine the assigned entries of a tag, but the only assigned entries of the tag are not available. The Admin will be alerted as to how many of the assigned entries are in an un-displayable state by a small message that will appear near the top of screen (see the screen shot above).</p>
+
+<h2 id="user-profiles">User Profiles</h2>
+
+<p><img src="/images/AppAdmin/UserDataUserProfile.png" alt="Tags page screenshot" />
+You may notice that this page is very similar in functionality to the <a href="/applicationadmin/applicationmanagement/#user-management">User Management page</a> from Application Management.</p>
+
+<p>Toggling a profile only switches it&rsquo;s &ldquo;Active Status&rdquo;, a Boolean (on/off) value that is attached to all profiles on SPOON. However, in v2.11, this value is not tied to anything. If the Admin toggles off a profile to make it inactive, it will not affect any user functions at all, and when the user logs into SPOON next, the &ldquo;Active Status&rdquo; value will be switched back to &ldquo;A&rdquo; (which stands for Active, as opposed to &ldquo;I&rdquo;, which signifies Inactive).</p>
+
+
+    
+    
+          <footer class=" footline" >
+	
+</footer>
+  </div>
+</div>
+
+<div id="navigation">
+<a class="nav nav-prev" href="/applicationadmin/customsubmissionforms/" title="Custom Submission Forms"> <i class="fa fa-chevron-left"></i><label>Custom Submission Forms</label></a>
+    <a class="nav nav-next" href="/applicationadmin/workplans/" title="Workplans" style="margin-right: 0px;"><label>Workplans</label><i class="fa fa-chevron-right"></i></a></div>
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
+
+<script src="/js/clipboard.min.js"></script>
+<script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
+
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

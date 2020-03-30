@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-03-09T11:43:29 MDT">
+<meta name="revised" content="2020-03-30T11:30:00 MDT">
 <title>MongoDB Setup Guide :: SPOON Site Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -231,12 +231,6 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/tutorials/" class="dd-item
-        ">
-      <div>
-      <a href="/tutorials/">Tutorial Videos</a><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-    </li>
     <li data-nav-id="/dev/" class="dd-item parent haschildren
         ">
       <div>
@@ -265,29 +259,13 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-    <li data-nav-id="/dev/codestandards/" class="dd-item haschildren
+        </ul>
+    </li>
+    <li data-nav-id="/tutorials/" class="dd-item
         ">
       <div>
-      <a href="/dev/codestandards/">Coding Standards</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/tutorials/">Tutorial Videos</a><i class="fa fa-circle-thin read-icon"></i>
       </div>
-        <ul>
-      <li data-nav-id="/dev/codestandards/front-end-code-standard/" class="dd-item">
-        <div>
-          <a href="/dev/codestandards/front-end-code-standard/">
-            Front-end Code Standards
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/dev/codestandards/server-code-standard/" class="dd-item">
-        <div>
-          <a href="/dev/codestandards/server-code-standard/">
-            Server Code Standard
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-        </ul>
-    </li>
-        </ul>
     </li>
     <li data-nav-id="/releasenotes/" class="dd-item
         ">
@@ -316,9 +294,9 @@
     </ul>
 
  <section id="footer"><div style="color: #E0E0DA;">
-    <p>SPOONsite version 2.12.0</p>
-    <p>Documentation generated on Mar 9, 2020</p>
-    <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.40.1</p>
+    <p>SPOONsite version 2.12.1</p>
+    <p>Documentation generated on Mar 30, 2020</p>
+    <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.55.3</p>
 </div>
     </section>
   </div>
@@ -387,8 +365,7 @@
     
     
     
-    <p>This guide describes how to setup MongoDB in a docker container for development.
-</p>
+    <p>This guide describes how to setup MongoDB in a docker container for development.</p>
 
 <h2 id="method-1-build-a-docker-container-with-a-dockerfile">Method #1: Build a Docker Container with a Dockerfile</h2>
 
@@ -398,9 +375,9 @@
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> mkdir -p /etc/mongo<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> echo <span style="color:#e6db74">&#34;net:\n    bindIp: 0.0.0.0\n    port: 27017&#34;</span> &gt; /etc/mongo/mongod.conf</code></pre></div>
-<div class="notices warning" ><p>Don't make a mongod.conf like this for production. <code>bindIp: 0.0.0.0</code> allows connections from anywhere and is not secure.</p>
+<div class="notices warning" >
+Don't make a mongod.conf like this for production. `bindIp: 0.0.0.0` allows connections from anywhere and is not secure.
 </div>
-
 
 <p>This docker file must be all by itself inside of its own directory.</p>
 
@@ -449,18 +426,18 @@ Further you may need to add an additional property to the file:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mkdir mongo-backup
 mongodump --db storefront --out mongo-backup/<span style="color:#e6db74">`</span>date +<span style="color:#e6db74">&#34;%m-%d-%y&#34;</span><span style="color:#e6db74">`</span></code></pre></div>
 <p>And then put that data inside the running docker container.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># copy the backup to the container
-</span><span style="color:#75715e"></span>docker cp <span style="color:#ae81ff">01</span>-08-20/. &lt;mongo container&gt;:/home
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># copy the backup to the container</span>
+docker cp <span style="color:#ae81ff">01</span>-08-20/. &lt;mongo container&gt;:/home
 
-<span style="color:#75715e"># get a shell to the running container
-</span><span style="color:#75715e"></span>docker exec -it &lt;mongo container&gt; bash
+<span style="color:#75715e"># get a shell to the running container</span>
+docker exec -it &lt;mongo container&gt; bash
 
-<span style="color:#75715e"># now the shell is inside the docker container
-</span><span style="color:#75715e"></span>cd /home
+<span style="color:#75715e"># now the shell is inside the docker container</span>
+cd /home
 
 
-<span style="color:#75715e"># restore the backup &#34;storefront&#34; database
-</span><span style="color:#75715e"></span>mongorestore --db &lt;restored database&gt; --drop storefront</code></pre></div>
+<span style="color:#75715e"># restore the backup &#34;storefront&#34; database</span>
+mongorestore --db &lt;restored database&gt; --drop storefront</code></pre></div>
 <p>See the <a href="/systemadmin/datamigrationguide/">Mongo data migration guide</a></p>
 
     

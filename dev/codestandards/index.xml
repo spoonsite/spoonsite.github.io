@@ -6,7 +6,6 @@
     <description>Recent content in Coding Standards on SPOON Site Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Oct 2019 16:41:36 -0600</lastBuildDate>
     
 	<atom:link href="/dev/codestandards/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,8 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/dev/codestandards/front-end-code-standard/</guid>
-      <description>&lt;p&gt;These are the code standards for this project.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;These are the code standards for this project.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -27,8 +25,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/dev/codestandards/server-code-standard/</guid>
-      <description>&lt;p&gt;These are special notes when making additions to the server-side code.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;These are special notes when making additions to the server-side code.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -6,7 +6,6 @@
     <description>Recent content in Developer on SPOON Site Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 May 2019 09:37:33 -0600</lastBuildDate>
     
 	<atom:link href="/dev/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,8 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/dev/developersguide/</guid>
-      <description>&lt;p&gt;This guide describes various issues developers would be concerned with, such as how to set up their IDE (integrated development environment), what libraries are used, etc.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;This guide describes various issues developers would be concerned with, such as how to set up their IDE (integrated development environment), what libraries are used, etc.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -27,8 +25,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/dev/mongosetupguide/</guid>
-      <description>&lt;p&gt;This guide describes how to setup MongoDB in a docker container for development.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;This guide describes how to setup MongoDB in a docker container for development.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -37,8 +34,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/dev/architecture/</guid>
-      <description>&lt;p&gt;This guide describes the high-level design of the server and client architecture.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;This guide describes the high-level design of the server and client architecture.&lt;/p&gt;</description>
     </item>
     
   </channel>

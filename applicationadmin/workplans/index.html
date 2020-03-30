@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-03-09T11:43:29 MDT">
+<meta name="revised" content="2020-03-30T11:30:00 MDT">
 <title>Workplans :: SPOON Site Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -232,12 +232,6 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/tutorials/" class="dd-item
-        ">
-      <div>
-      <a href="/tutorials/">Tutorial Videos</a><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-    </li>
     <li data-nav-id="/dev/" class="dd-item haschildren
         ">
       <div>
@@ -289,6 +283,12 @@
     </li>
         </ul>
     </li>
+    <li data-nav-id="/tutorials/" class="dd-item
+        ">
+      <div>
+      <a href="/tutorials/">Tutorial Videos</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
     <li data-nav-id="/releasenotes/" class="dd-item
         ">
       <div>
@@ -316,9 +316,9 @@
     </ul>
 
  <section id="footer"><div style="color: #E0E0DA;">
-    <p>SPOONsite version 2.12.0</p>
-    <p>Documentation generated on Mar 9, 2020</p>
-    <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.40.1</p>
+    <p>SPOONsite version 2.12.1</p>
+    <p>Documentation generated on Mar 30, 2020</p>
+    <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.55.3</p>
 </div>
     </section>
   </div>
@@ -373,19 +373,14 @@
 <ul>
 <li>
 <ul>
-<li><a href="#create-a-new-workplan">Create a new Workplan</a>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#workplans">Workplans</a>
 <ul>
 <li><a href="#create-the-workplan">Create the Workplan</a></li>
-<li><a href="#1-2-define-workplan-steps">1.2  Define Workplan Steps</a>
-<ul>
-<li>
-<ul>
-<li><a href="#step-configuration-active-on-vs-approval-state-to-match"><strong>Step Configuration:</strong> &ldquo;Active On&rdquo; VS &ldquo;Approval State to Match&rdquo;</a></li>
+<li><a href="#define-workplan-steps">Define Workplan Steps</a></li>
 </ul></li>
-</ul></li>
-</ul></li>
-<li><a href="#2-workplan-progress-for-admins-and-smes">2. Workplan Progress for Admins and SMEs</a></li>
-<li><a href="#3-for-submission-owners">3. For Submission Owners</a></li>
+<li><a href="#workplan-progress-for-admins-and-smes">Workplan Progress for Admins and SMEs</a></li>
+<li><a href="#for-submission-owners">For Submission Owners</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -408,9 +403,33 @@
     
     
 
-<h2 id="create-a-new-workplan">Create a new Workplan</h2>
+<p><img src="/images/AppAdmin/Workplans/summarypic.png" alt="Simple illustration of a Work Plan diagram" /></p>
 
-<p>A step-by-step guide to creating a workplan.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+
+<ol>
+<li><a href="#workplans"><strong>Workplans</strong></a>
+
+<ul>
+<li><a href="#create-the-workplan"><strong>Create the Workplan</strong></a></li>
+<li><a href="#define-workplan-steps"><strong>Define WorkPlan Steps</strong></a></li>
+</ul></li>
+<li><a href="#workplan-progress-for-admins-and-smes"><strong>WorkPlan Progress (For Admins and SMEs)</strong></a></li>
+<li><a href="#for-submission-owners"><strong>Submissions Page</strong></a></li>
+</ol>
+
+<h2 id="workplans">Workplans</h2>
+
+<p>A step-by-step guide to creating and managing workplans. There is a built in <strong>Default WorkPlan</strong> that cannot be deleted. There is no limit on the number of WorkPlans that can be created.</p>
+
+<p>The <strong>&ldquo;Active&rdquo; Workplans</strong> will be used by the system to classify all entries on Spoon.
+  All entries should be in an active workplan. To enforce this, approximately every 10 minutes the WorkPlanSync <a href="/applicationadmin/applicationmanagement/#jobs">Job</a> is ran.
+  This job checks every entry on Spoon to ensure that it is represented in an active WorkPlan. When a workplan is deactivated, the entries that used to be in it are reassigned to the WorkPlan marked for entries of their Entry Type.
+  If there is no active Workplan with a matching Entry Type, they are sent to the Default WorkPlan.<sup class="footnote-ref" id="fnref:There-is-a-notab"><a href="#fn:There-is-a-notab">1</a></sup>.</p>
+
+<p>Workplans can be assigned to one or more <a href="#create-the-workplan">Entry Types</a>
+  simultaneously. Learn about <a href="/applicationadmin/attributes/#entry-types">creating Entry Types</a>, or learn about <a href="#create-the-workplan">setting
+  a Workplan&rsquo;s Entry Types</a></p>
 
 <h3 id="create-the-workplan">Create the Workplan</h3>
 
@@ -428,7 +447,7 @@
 </ul></li>
 </ol>
 
-<h3 id="1-2-define-workplan-steps">1.2  Define Workplan Steps</h3>
+<h3 id="define-workplan-steps">Define Workplan Steps</h3>
 
 <p>It is a good idea to define the steps to be taken with each entry before creating the actual steps.</p>
 
@@ -440,36 +459,105 @@
 <ul>
 <li><strong>Step name</strong>: Unique step name</li>
 <li><strong>Short Description</strong>: A description of the step. Keep it brief, but be sure to include enough information for the person responsible for the step</li>
-<li><strong>Approval State to Match</strong>: This will be the status of a entry while it is in this step</li>
-<li><strong>Active On</strong>: The state that an entry is currently in when it is assigned to that step</li>
-<li><strong>Role Access</strong>: What role group will be able to view this entry in their Workplan Progress page</li>
-</ul></li>
+
+<li><p><strong>Approval State to Match</strong>: is only used to place new entries into matching WorkPlan steps in instances where an entry has never been represented in
+the particular WorkPlan before. When a new WorkPlan is created, this is what is used to decide where entries should be placed in the new WorkPlan.
+Transitions between WorkPlans are the only time this marker is used.</p>
+
+<p>For example, imagine that the current WorkPlan had a number of entries moving through it such that at any given moment there was a fair number
+of parts in every WorkPlan step. Let there be a new WorkPlan was created that may or may not have a different number of steps, different actions,
+triggers, etc. When the new WorkPlan is made active, and the WorkPlanSync <a href="/applicationadmin/applicationmanagement/#jobs">Job</a> is run (without running manually, it will run automatically every
+15 minutes or so), all of the entries in the old, recently inactivated WorkPlan will be placed under WorkPlan step.</p>
+
+<p>The diagram below shows where entries (the brown cards marked with their current Approval Status) would be placed in a newly created
+WorkPlan with a different number of steps. Note that when new steps are added to an existing, active WorkPlan, this matching process
+does not happen.</p>
+
+<p><img src="/images/AppAdmin/Workplans/approvaltomatch.png" alt="Example Diagram of Approval State To Matches effect" /></p></li>
+
+<li><p><strong>Role Access</strong>: What role group will be able to view or move this entry in their Workplan Progress page. Role groups who are put here will be able to see &ldquo;Forward&rdquo; and &ldquo;Back&rdquo; buttons on their display.</p></li>
+
+<li><p><strong>Active On</strong>: &ldquo;Triggers&rdquo; or &ldquo;Traps&rdquo; for component events. When an entry experiences an event, it will be sent to the WorkPlan step that has a matching Active On status as that event.</p></li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th align="center">Role Access Option</th>
+<th align="center">Meaning</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">Active</td>
+<td align="center">Fires when a component is submitted to the server as needing to  be activated. *</td>
+</tr>
+
+<tr>
+<td align="center">Approve</td>
+<td align="center">Fires when a component is submitted to the server to be approved.*</td>
+</tr>
+
+<tr>
+<td align="center">Create</td>
+<td align="center">Fires when component is first created.</td>
+</tr>
+
+<tr>
+<td align="center">Deactivated</td>
+<td align="center">Fires when a component is submitted to the server as needing to be  deactivated. *</td>
+</tr>
+
+<tr>
+<td align="center">Delete</td>
+<td align="center">This trigger fires, but does nothing. If there is some specific behavior  you would like to see from this event firing, please contact the  development team.</td>
+</tr>
+
+<tr>
+<td align="center">Entry Delete</td>
+<td align="center">This trigger does nothing.</td>
+</tr>
+
+<tr>
+<td align="center">New Submission (Not Submitted)</td>
+<td align="center">Only fires when a entry is submitted to be saved, before it is submitted to as pending, where the entry is a &ldquo;Partial Submission&rdquo; object, not a &ldquo;Component&rdquo;  object. If you are using SPOON v1.12 or greater, you will likely not need this as all user created entries will be &ldquo;Component&rdquo; objects.</td>
+</tr>
+
+<tr>
+<td align="center">Pending</td>
+<td align="center">Fires when a Not-Submitted component is submitted to the server. This trigger is NOT fired when an Admin user manually sets a component&rsquo;s Approval Status to Pending.</td>
+</tr>
+
+<tr>
+<td align="center">Pending Change Request</td>
+<td align="center">Fires when a change request is submitted to the server.</td>
+</tr>
+
+<tr>
+<td align="center">Published Evaluation</td>
+<td align="center">Fires when an evaluation is submitted to the server as to be Published.</td>
+</tr>
+
+<tr>
+<td align="center">Unpublished Evaluation</td>
+<td align="center">Fires when an evaluation is submitted to the server as being un-Published.</td>
+</tr>
+
+<tr>
+<td align="center">Update</td>
+<td align="center">Fires anytime a component is saved for any reason, in any way. Even editing &amp; saving an entry from the Admin Tools &gt; Data Management &gt; Entries &gt; &ldquo;Edit&rdquo; screen fires this trigger. If you attach this trigger to a WorkPlan step, an entry may appear to be &ldquo;stuck&rdquo; in that step, as any Action of a step that alters the entry enough to re-save it will trigger the Update trap which sends the entry back to the Update-marked WorkPlan step (An infinite loop, basically). For this reason we do not recommend you use this trigger unless you desire this behavior. Moving a entry manually between steps will not fire the Update trigger.</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>In cases marked with *, note that this trigger is not fired if the entry&rsquo;s status is manually changed by the Admin user from the Admin Tools &gt;
+Data Management &gt; Entries &gt; &ldquo;Edit&rdquo; screen. These triggers are only fired when the status change happens through other means, such as Action Steps.</strong></p></li>
 
 <li><p>Step Actions: Step Actions are events that will occur when a step becomes active</p></li>
 </ol>
 
-<div class="notices warning" ><p>In Spoon v2.12, most of the &ldquo;Active On&rdquo; options are in Alpha, which means that they will not work as expected because their functionaity has not been programmed into Spoon yet. Those options are
- there as placeholders (if you want these features, please email your adminstator/developer team). The &ldquo;Update&rdquo; and &ldquo;Create&rdquo; options do work however. Any of the in-alpha options will behave the same
-  as if they were the &ldquo;Create&rdquo; option. See below for more details.</p>
-</div>
-
-
-<h5 id="step-configuration-active-on-vs-approval-state-to-match"><strong>Step Configuration:</strong> &ldquo;Active On&rdquo; VS &ldquo;Approval State to Match&rdquo;</h5>
-
-<p>It&rsquo;s important to know the difference between &ldquo;Active On&rdquo; and &ldquo;Approval State to Match&rdquo;. Both define what events will cause a part to be sent to the Workplan Step in question. The difference is in
-the timing of when they take effect. &ldquo;Active On&rdquo; events are handled first, then the &ldquo;Approval State&rdquo; of a part is checked, and placed into the first step that has a &ldquo;Approval State to Match&rdquo;.</p>
-
-<p>For example, say that a part sitting in a Workplan is manaully set from having an Approval state of &ldquo;Pending&rdquo; to &ldquo;Approved&rdquo;  (an admin is able to do this through Admin Tools &gt; Data Management &gt; Entries,
-click &ldquo;Edit&rdquo;). When the part is re-saved into the database with this new Approval status, an approved event [should] be fired. In the Workplan, the first Step that has an &ldquo;Active On&rdquo; option of
- &ldquo;Approved&rdquo; will receive that part. Then the Approval State will be checked on the part, and the first step in the Workplan that has an &ldquo;Approval State to Match&rdquo; of Approved will recieve the part.
- Thus if there is a workplan step A that has &ldquo;Active On&rdquo; attribute Approved, and a workplan step B with an &ldquo;Approval State to Match&rdquo; of Approved, then after a part has been approved, the part will
- appear in step B.</p>
-
-<p>Note that in v2.12 of Spoon, only &ldquo;Create&rdquo; and &ldquo;Update&rdquo; are supported, therefore some events are treated as if they are &ldquo;Create&rdquo;: Activate, Deactivate, Pending Change Request, Published Evaluation
- (? untested), Unpublished Evaluation (? untested). The Approved and Pending events are treated like Update events. So setting those options will cause the step in question to catch Created and
- Updated parts, respectively.</p>
-
-<h2 id="2-workplan-progress-for-admins-and-smes">2. Workplan Progress for Admins and SMEs</h2>
+<h2 id="workplan-progress-for-admins-and-smes">Workplan Progress for Admins and SMEs</h2>
 
 <p>Each step of a workplan will be assigned to a certain group. That group will see the entries that are assigned to them when they access the Workplan Progress page
 (<strong>Data Management &rarr; Workplan Progress</strong>). Each group will complete the task assigned to them. Once completed it will move to the next group.</p>
@@ -479,9 +567,17 @@ click &ldquo;Edit&rdquo;). When the part is re-saved into the database with this
 
 <p>The <strong>Assign</strong> box has a number of operations used to assign a submission to an admin, unassign or assign it to yourself, or reassign it to another user.</p>
 
-<h2 id="3-for-submission-owners">3. For Submission Owners</h2>
+<h2 id="for-submission-owners">For Submission Owners</h2>
 
 <p>Submission owners will get notifications of comments on their submissions. Owners are expected to update material as recommended by SMEs and reviewers.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:There-is-a-notab"> There is a   notable exception to this rule: If an entry is in a WorkPlan that is inactivated and there is NOT another active   WorkPlan with a matching Entry Type, the entry will stay in the inactivated Workplan, it will NOT be moved to the   default Workplan. So it is possible for a entry to be in an inactivated plan. In this state these entries can be   acted upon in the same manner as normal entries.  <a class="footnote-return" href="#fnref:There-is-a-notab"><sup>[return]</sup></a></li>
+</ol>
+</div>
 
 
     

@@ -6,7 +6,6 @@
     <description>Recent content in Application Admin on SPOON Site Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Dec 2019 16:13:14 -0700</lastBuildDate>
     
 	<atom:link href="/applicationadmin/index.xml" rel="self" type="application/rss+xml" />
     
@@ -28,8 +27,7 @@ Feedback SPOON users can submit feedback by clicking on their Username in the to
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/applicationadmin/branding/</guid>
-      <description>Table of Contents  General Login Page Support Security Colors/Logos Current CSS  When updating or changing branding, you must toggle it back on. When a branding is created or edited it is automatically turned off. A branding is active only if the status column has an &amp;ldquo;A&amp;rdquo; in it or if the name has &amp;ldquo;active&amp;rdquo; next to it.
- The Branding Form General Be aware of the fact that text color is preserved from the input boxes on this page to the destinations of the content.</description>
+      <description>Table of Contents  General Login Page Support Security Colors/Logos Current CSS  When updating or changing branding, you must toggle it back on. When a branding is created or edited it is automatically turned off. A branding is active only if the status column has an &#34;A&#34; in it or if the name has &#34;active&#34; next to it.  The Branding Form General Be aware of the fact that text color is preserved from the input boxes on this page to the destinations of the content.</description>
     </item>
     
     <item>
@@ -102,8 +100,8 @@ Questions Users can ask questions to an entry&amp;rsquo;s contacts, but before t
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/applicationadmin/workplans/</guid>
-      <description>Create a new Workplan A step-by-step guide to creating a workplan.
-Create the Workplan  Navigate to Admin Tools if you are not already there (click your username in the upper-right, then Admin Tools) Select Data Management &amp;rarr; Workplan Management Click +Add Workplan  First fill in the Workplan Config Section  Workplan Name: Unique Workplan name Workplan Admin Role: Choose the user group that will have access to entries in this workplan Workplan For: Entry Entry Type: Choose the entry type that this workplan will apply to   1.</description>
+      <description>Table of Contents  Workplans  Create the Workplan Define WorkPlan Steps  WorkPlan Progress (For Admins and SMEs) Submissions Page  Workplans A step-by-step guide to creating and managing workplans. There is a built in Default WorkPlan that cannot be deleted. There is no limit on the number of WorkPlans that can be created.
+The &amp;ldquo;Active&amp;rdquo; Workplans will be used by the system to classify all entries on Spoon.</description>
     </item>
     
     <item>

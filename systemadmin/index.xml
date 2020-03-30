@@ -6,7 +6,6 @@
     <description>Recent content in System Admin on SPOON Site Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 May 2019 09:37:33 -0600</lastBuildDate>
     
 	<atom:link href="/systemadmin/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,9 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/systemadmin/setup/</guid>
-      <description>&lt;p&gt;These are instructions on how to get production instance of SPOON set up on a VM.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;These are instructions on how to get production instance of SPOON set up on a VM.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,9 +25,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/systemadmin/docker/</guid>
-      <description>&lt;p&gt;Information on running SPOON in a Docker container.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Information on running SPOON in a Docker container.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -39,9 +34,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/systemadmin/administratorguide/</guid>
-      <description>&lt;p&gt;This article gives further instructions on setting up and configuring the web application.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;This article gives further instructions on setting up and configuring the web application.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -50,9 +43,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/systemadmin/datamigrationguide/</guid>
-      <description>&lt;p&gt;This guide provide help for importing data from external sources as well as moving data from one instance to another instance.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;This guide provide help for importing data from external sources as well as moving data from one instance to another instance.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -61,9 +52,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/systemadmin/versionmigrationguide/</guid>
-      <description>&lt;p&gt;This guide details changes and upgrades that have happened from version to version.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;This guide details changes and upgrades that have happened from version to version.&lt;/p&gt;</description>
     </item>
     
   </channel>

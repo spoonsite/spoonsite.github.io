@@ -17,8 +17,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/dev/developersguide/</guid>
-      <description>&lt;p&gt;This guide describes various issues developers would be concerned with, such as how to set up their IDE (integrated development environment), what libraries are used, etc.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;This guide describes various issues developers would be concerned with, such as how to set up their IDE (integrated development environment), what libraries are used, etc.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -36,8 +35,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/user/userguide/</guid>
-      <description>&lt;p&gt;This is a guide to help users use SPOON.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;This is a guide to help users use SPOON.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -46,8 +44,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/dev/mongosetupguide/</guid>
-      <description>&lt;p&gt;This guide describes how to setup MongoDB in a docker container for development.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;This guide describes how to setup MongoDB in a docker container for development.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -56,9 +53,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/systemadmin/setup/</guid>
-      <description>&lt;p&gt;These are instructions on how to get production instance of SPOON set up on a VM.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;These are instructions on how to get production instance of SPOON set up on a VM.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -67,9 +62,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/systemadmin/docker/</guid>
-      <description>&lt;p&gt;Information on running SPOON in a Docker container.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Information on running SPOON in a Docker container.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -78,8 +71,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/dev/codestandards/front-end-code-standard/</guid>
-      <description>&lt;p&gt;These are the code standards for this project.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;These are the code standards for this project.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -88,8 +80,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/dev/architecture/</guid>
-      <description>&lt;p&gt;This guide describes the high-level design of the server and client architecture.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;This guide describes the high-level design of the server and client architecture.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -98,9 +89,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/systemadmin/administratorguide/</guid>
-      <description>&lt;p&gt;This article gives further instructions on setting up and configuring the web application.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;This article gives further instructions on setting up and configuring the web application.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -109,9 +98,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/systemadmin/datamigrationguide/</guid>
-      <description>&lt;p&gt;This guide provide help for importing data from external sources as well as moving data from one instance to another instance.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;This guide provide help for importing data from external sources as well as moving data from one instance to another instance.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -120,9 +107,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/systemadmin/versionmigrationguide/</guid>
-      <description>&lt;p&gt;This guide details changes and upgrades that have happened from version to version.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;This guide details changes and upgrades that have happened from version to version.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -131,8 +116,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/dev/codestandards/server-code-standard/</guid>
-      <description>&lt;p&gt;These are special notes when making additions to the server-side code.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;These are special notes when making additions to the server-side code.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -152,7 +136,7 @@ Feedback SPOON users can submit feedback by clicking on their Username in the to
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/user/unitlegend/</guid>
-      <description>This is the legend for commonly confused unit names and acronyms.    Symbol Base unit Description     &#39;$&#39; US Dollar 1 US dollar   &#39;G&#39; Gauss 1 Gauss   &#39;GB&#39; Byte $10^9$ bytes (Gigabyte)   &#39;Gb&#39; Bit $10^9$ bits (Gigabit)   &#39;Gbps&#39; Bit Per Second $10^9 \frac{\text{bits}}{\text{sec}}$   &#39;Grav&#39; Newtonian constant of gravitation    &#39;MB&#39; Byte $10^6$ bytes (Megabyte)   &#39;MIPS&#39; Million of Instructions Per Second $10^6$ $\frac{\text{instruction}}{\text{second}}$   &#39;Mb&#39; Bit $10^6$ bits (Megabit)   &#39;Mbps&#39; Bit Per Second $10^6 \frac{\text{bits}}{\text{sec}}$   &#39;PB&#39; Byte $10^{15}$ bytes (Petabyte)   &#39;Pb&#39; Bit $10^{15}$ bits (Petabit)   &#39;TB&#39; Byte $10^{12}$ bytes (Terabyte)   &#39;Tb&#39; Bit $10^{12}$ bits (Terabit)   &#39;arcsec&#39; Degree $\frac{1}{3600}$ degree   &#39;arcsmin&#39; Degree $\frac{1}{60}$ degree   &#39;bps&#39; Bit Per Second 1 $\frac{\text{bit}}{\text{sec}}$   &#39;dBW&#39; Decibel Watt 1 decibel Watt   &#39;dBm&#39; Decibel Watt $10^{-6}$ decibel Watt (Decibel milli-Watt)   &#39;dbC&#39; Decibel 1 Decibel   &#39;dbc&#39; Decibel 1 Decibel   &#39;dbd&#39; Decibel 1 Decibel   &#39;dbi&#39; Decibel 1 Decibel   &#39;deg&#39; or &#39;°&#39; Degree 1 degree   &#39;g&#39; Gram 1 gram   &#39;grms&#39; or &#39;Grms&#39; Root-Mean-Square Acceleration    &#39;hr&#39; or &#39;hour&#39; Hour 1 hour   &#39;inch&#39; inch 1 inch   &#39;kB&#39; or &#39;KB&#39; Byte $10^3$ bytes (Kilobyte)   &#39;kb&#39; or &#39;Kb&#39; Bit $10^3$ bits (Kilobit)   &#39;kbps&#39; Bit Per Second $10^3 \frac{\text{bits}}{\text{sec}}$   &#39;mG&#39; Gauss $10^{-6}$ Gauss (microGauss)   &#39;mGrav&#39; Grav $10^{-6}$ Grav (microGrav)   &#39;micron&#39; or &#39;μm&#39; Meter $10^{-6}$ meter (micrometer)   &#39;psi&#39; Pounds Per Square Inch 1 $\frac{\text{lbs}}{\text{in}^2}$   &#39;rpm&#39; or &#39;RPM&#39; Revolution Per Minute 1 $\frac{\text{revolution}}{\text{Minute}}$   &#39;μN&#39; Newton $10^{-6}$ Newton (microNewton)   &#39;μm&#39; Gram $10^{-6}$ gram (Microgram)   &#39;μs&#39; Second $10^{-6}$ second (Microsecond)    JScience Semantics When attempting to use a superscript fraction as an attribute (ex.</description>
+      <description>&lt;p&gt;This is the legend for commonly confused unit names and acronyms.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -161,8 +145,7 @@ Feedback SPOON users can submit feedback by clicking on their Username in the to
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/applicationadmin/branding/</guid>
-      <description>Table of Contents  General Login Page Support Security Colors/Logos Current CSS  When updating or changing branding, you must toggle it back on. When a branding is created or edited it is automatically turned off. A branding is active only if the status column has an &amp;ldquo;A&amp;rdquo; in it or if the name has &amp;ldquo;active&amp;rdquo; next to it.
- The Branding Form General Be aware of the fact that text color is preserved from the input boxes on this page to the destinations of the content.</description>
+      <description>Table of Contents  General Login Page Support Security Colors/Logos Current CSS  When updating or changing branding, you must toggle it back on. When a branding is created or edited it is automatically turned off. A branding is active only if the status column has an &#34;A&#34; in it or if the name has &#34;active&#34; next to it.  The Branding Form General Be aware of the fact that text color is preserved from the input boxes on this page to the destinations of the content.</description>
     </item>
     
     <item>
@@ -235,8 +218,8 @@ Questions Users can ask questions to an entry&amp;rsquo;s contacts, but before t
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/applicationadmin/workplans/</guid>
-      <description>Create a new Workplan A step-by-step guide to creating a workplan.
-Create the Workplan  Navigate to Admin Tools if you are not already there (click your username in the upper-right, then Admin Tools) Select Data Management &amp;rarr; Workplan Management Click +Add Workplan  First fill in the Workplan Config Section  Workplan Name: Unique Workplan name Workplan Admin Role: Choose the user group that will have access to entries in this workplan Workplan For: Entry Entry Type: Choose the entry type that this workplan will apply to   1.</description>
+      <description>Table of Contents  Workplans  Create the Workplan Define WorkPlan Steps  WorkPlan Progress (For Admins and SMEs) Submissions Page  Workplans A step-by-step guide to creating and managing workplans. There is a built in Default WorkPlan that cannot be deleted. There is no limit on the number of WorkPlans that can be created.
+The &amp;ldquo;Active&amp;rdquo; Workplans will be used by the system to classify all entries on Spoon.</description>
     </item>
     
     <item>
@@ -254,8 +237,7 @@ Create the Workplan  Navigate to Admin Tools if you are not already there (click
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/user/advancedsearching/</guid>
-      <description>A guide to advanced searching. Searching Application Search provides a way to find entry lists and articles matching search criteria. Several types of searches are supported. The types of searches that can be performed are:
- Searching across multiple fields (entry name and description, tags, attribute types, codes, and descriptions) Wildcard searching (* and ?) Exact phrase searching Case insensitivity Filtered searches Tags Comparison Customization of the display  Note: The type ahead on the search field only looks at the title to see if it contains the text.</description>
+      <description>&lt;p&gt;A guide to advanced searching.&lt;/p&gt;</description>
     </item>
     
     <item>

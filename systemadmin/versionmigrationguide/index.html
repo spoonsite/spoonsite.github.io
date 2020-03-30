@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-03-09T11:43:29 MDT">
+<meta name="revised" content="2020-03-30T11:30:00 MDT">
 <title>Version Migration :: SPOON Site Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -232,12 +232,6 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/tutorials/" class="dd-item
-        ">
-      <div>
-      <a href="/tutorials/">Tutorial Videos</a><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-    </li>
     <li data-nav-id="/dev/" class="dd-item haschildren
         ">
       <div>
@@ -289,6 +283,12 @@
     </li>
         </ul>
     </li>
+    <li data-nav-id="/tutorials/" class="dd-item
+        ">
+      <div>
+      <a href="/tutorials/">Tutorial Videos</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
     <li data-nav-id="/releasenotes/" class="dd-item
         ">
       <div>
@@ -316,9 +316,9 @@
     </ul>
 
  <section id="footer"><div style="color: #E0E0DA;">
-    <p>SPOONsite version 2.12.0</p>
-    <p>Documentation generated on Mar 9, 2020</p>
-    <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.40.1</p>
+    <p>SPOONsite version 2.12.1</p>
+    <p>Documentation generated on Mar 30, 2020</p>
+    <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.55.3</p>
 </div>
     </section>
   </div>
@@ -389,8 +389,6 @@
     
     <p>This guide details changes and upgrades that have happened from version to version.</p>
 
-<p></p>
-
 <p>In general, you should always upgrade one version at a time in order (i.e., going from 2.2 to 2.4, then 2.2 to 2.3, then to 2.4).This will ensure data migrations will occur in the proper order. If you start from the latest version and have no data then migration is not needed.</p>
 
 <h2 id="note-v211">Note: v2.11</h2>
@@ -422,10 +420,10 @@ from the database by using the application system UI or by using an external too
 <p>Generally the migration process is expected to only take about 1-2 minutes, but it depends on the size of database and system resources.</p></li>
 </ol>
 
-<div class="notices warning" ><p>The data migration will remove existing Mongo &quot;Storefront&quot; database collections and replace the content from the equivalent
-Orient data. Orient's data is not affected by the migration, so the process can be repeated.</p>
+<div class="notices warning" >
+The data migration will remove existing Mongo "Storefront" database collections and replace the content from the equivalent
+Orient data. Orient's data is not affected by the migration, so the process can be repeated.
 </div>
-
 
 <h2 id="note-v210">Note: v2.10</h2>
 
@@ -529,21 +527,21 @@ orientdb&gt; IMPORT DATABASE /temp/mydb.json.gz</code></pre></div>
 <ol>
 <li>Run Elasticsearch (with <strong>SysV init</strong>)</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># on system boot
-</span><span style="color:#75715e"></span>sudo chkconfig --add elasticsearch
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># on system boot</span>
+sudo chkconfig --add elasticsearch
 
-<span style="color:#75715e"># manually
-</span><span style="color:#75715e"></span>sudo -i service elasticsearch start
+<span style="color:#75715e"># manually</span>
+sudo -i service elasticsearch start
 sudo -i service elasticsearch stop</code></pre></div>
 <ol>
 <li>Run Elasticsearch (with <strong>systemd</strong>)</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># on system boot
-</span><span style="color:#75715e"></span>sudo /bin/systemctl daemon-reload
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># on system boot</span>
+sudo /bin/systemctl daemon-reload
 sudo /bin/systemctl enable elasticsearch.service
 
-<span style="color:#75715e">#manually
-</span><span style="color:#75715e"></span>sudo systemctl start elasticsearch.service
+<span style="color:#75715e">#manually</span>
+sudo systemctl start elasticsearch.service
 sudo systemctl stop elasticsearch.service</code></pre></div>
 <p>Elasticsearch service command reference (Elasticsearch should be running at this point):</p>
 
@@ -578,10 +576,10 @@ sudo systemctl stop elasticsearch.service</code></pre></div>
 
 <h2 id="upgrading-from-v23-to-v24">Upgrading from v2.3 to v2.4</h2>
 
-<div class="notices note" ><p>As part of the upgrade, Metadata will be automatically converted to Attributes. This may take a while if there is a lot of
-Metadata associated with the entries. The server won't be available until the migration is complete.</p>
+<div class="notices note" >
+As part of the upgrade, Metadata will be automatically converted to Attributes. This may take a while if there is a lot of
+Metadata associated with the entries. The server won't be available until the migration is complete.
 </div>
-
 
 <p>Pre-Deployment</p>
 
@@ -636,7 +634,7 @@ one or more; this appears to be optional)</li>
 
 <div id="navigation">
 <a class="nav nav-prev" href="/systemadmin/datamigrationguide/" title="Data Migration Guide"> <i class="fa fa-chevron-left"></i><label>Data Migration Guide</label></a>
-    <a class="nav nav-next" href="/tutorials/" title="Tutorial Videos" style="margin-right: 0px;"><label>Tutorial Videos</label><i class="fa fa-chevron-right"></i></a></div>
+    <a class="nav nav-next" href="/dev/" title="Developer" style="margin-right: 0px;"><label>Developer</label><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

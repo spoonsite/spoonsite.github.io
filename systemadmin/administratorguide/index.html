@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-03-09T11:43:29 MDT">
+<meta name="revised" content="2020-03-30T11:30:00 MDT">
 <title>Administrator Guide :: SPOON Site Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -232,12 +232,6 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/tutorials/" class="dd-item
-        ">
-      <div>
-      <a href="/tutorials/">Tutorial Videos</a><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-    </li>
     <li data-nav-id="/dev/" class="dd-item haschildren
         ">
       <div>
@@ -289,6 +283,12 @@
     </li>
         </ul>
     </li>
+    <li data-nav-id="/tutorials/" class="dd-item
+        ">
+      <div>
+      <a href="/tutorials/">Tutorial Videos</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
     <li data-nav-id="/releasenotes/" class="dd-item
         ">
       <div>
@@ -316,9 +316,9 @@
     </ul>
 
  <section id="footer"><div style="color: #E0E0DA;">
-    <p>SPOONsite version 2.12.0</p>
-    <p>Documentation generated on Mar 9, 2020</p>
-    <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.40.1</p>
+    <p>SPOONsite version 2.12.1</p>
+    <p>Documentation generated on Mar 30, 2020</p>
+    <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.55.3</p>
 </div>
     </section>
   </div>
@@ -411,8 +411,6 @@
     
     
     <p>This article gives further instructions on setting up and configuring the web application.</p>
-
-<p></p>
 
 <h2 id="related-documentation">Related Documentation</h2>
 
@@ -965,9 +963,9 @@ on SPOON, but could be activated in the future.</p>
 
 <h3 id="ldap-configuration">LDAP Configuration</h3>
 
-<div class="notices warning" ><p>LDAP is currently not in use on SPOON.</p>
+<div class="notices warning" >
+LDAP is currently not in use on SPOON.
 </div>
-
 
 <p>Configure in <code>/var/openstorefront/config/shiro.ini</code></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[main]</span>
@@ -1004,9 +1002,9 @@ for how to configure JDBCRealm to obtain its DataSource from JNDI.</p>
 <span style="color:#a6e22e">securityManager.realms</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">$realm</span></code></pre></div>
 <h4 id="openam-request-header">OPENAM (Request Header)</h4>
 
-<div class="notices warning" ><p>OpenAM is currently not in use on SPOON.</p>
+<div class="notices warning" >
+OpenAM is currently not in use on SPOON.
 </div>
-
 
 <p>OpenAM configuration</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[main]</span>
@@ -1050,9 +1048,9 @@ for how to configure JDBCRealm to obtain its DataSource from JNDI.</p>
 <p>If using the built-in security, the system will create default roles for default users, admins and evaluators. It
 will also create a default admin user: (admin / Secret1@).</p>
 
-<div class="notices warning" ><p>You should change the admin password after login.</p>
+<div class="notices warning" >
+You should change the admin password after login.
 </div>
-
 
 <p>Pre-defined groups:</p>
 
@@ -1068,9 +1066,9 @@ will also create a default admin user: (admin / Secret1@).</p>
 
 <p>An admin can define new groups as needed.</p>
 
-<div class="notices note" ><p>All users are part of the Default group.</p>
+<div class="notices note" >
+All users are part of the Default group.
 </div>
-
 
 <h2 id="database-management">Database Management</h2>
 
@@ -1078,10 +1076,10 @@ will also create a default admin user: (admin / Secret1@).</p>
 
 <h3 id="refreshing-the-database">Refreshing the Database</h3>
 
-<div class="notices warning" ><p>This will wipe out all data in the application. Data, such as User profiles, cannot be recovered. Component user data can
-be preserved by performing an export from the component admin tool.</p>
+<div class="notices warning" >
+This will wipe out all data in the application. Data, such as User profiles, cannot be recovered. Component user data can
+be preserved by performing an export from the component admin tool.
 </div>
-
 
 <p>Make a backup by copying all of the files in the /var/openstorefront/db directory or use the following console tools steps:</p>
 

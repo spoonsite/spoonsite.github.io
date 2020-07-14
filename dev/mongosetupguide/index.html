@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-03-30T11:30:00 MDT">
+<meta name="revised" content="2020-07-14T14:53:58 MDT">
 <title>MongoDB Setup Guide :: SPOON Site Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -259,6 +259,28 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
+    <li data-nav-id="/dev/codestandards/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/dev/codestandards/">Coding Standards</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/dev/codestandards/front-end-code-standard/" class="dd-item">
+        <div>
+          <a href="/dev/codestandards/front-end-code-standard/">
+            Front-end Code Standards
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dev/codestandards/server-code-standard/" class="dd-item">
+        <div>
+          <a href="/dev/codestandards/server-code-standard/">
+            Server Code Standard
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
         </ul>
     </li>
     <li data-nav-id="/tutorials/" class="dd-item
@@ -294,8 +316,8 @@
     </ul>
 
  <section id="footer"><div style="color: #E0E0DA;">
-    <p>SPOONsite version 2.12.1</p>
-    <p>Documentation generated on Mar 30, 2020</p>
+    <p>SPOONsite version 2.12.2</p>
+    <p>Documentation generated on Jul 14, 2020</p>
     <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.55.3</p>
 </div>
     </section>
@@ -365,7 +387,7 @@
     
     
     
-    <p>This guide describes how to setup MongoDB in a docker container for development.</p>
+    <p>This guide describes how to setup MongoDB in a docker container or install locally for development.</p>
 
 <h2 id="method-1-build-a-docker-container-with-a-dockerfile">Method #1: Build a Docker Container with a Dockerfile</h2>
 
@@ -390,7 +412,7 @@ For example, the openstorefront.properties file might be found in: <code>C:\dev\
 The following properties need to be added near the top of the file.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#a6e22e">db.use.mongo</span><span style="color:#f92672">=</span><span style="color:#e6db74">true</span>
 <span style="color:#a6e22e">mongo.database</span><span style="color:#f92672">=</span><span style="color:#e6db74">storefront</span></code></pre></div>
-<p>Now that you have performed all the above steps, you just need to shutdown your tomcat server and restart it along with elasticsearch. After a few minutes your spoonsite instance should be up and running along all the data found in the aforementioned directory.</p>
+<p>Now that you have performed all the above steps, you just need to shutdown your tomcat server and restart it along with elasticsearch. After a few minutes your spoonsite instance should be up and running along with all the data found in the aforementioned directory.</p>
 
 <h2 id="method-2-mount-the-mongodconf-file-into-the-container">Method #2: Mount the mongod.conf file into the container</h2>
 
@@ -420,12 +442,34 @@ Further you may need to add an additional property to the file:</p>
 
 <p>Finally, should you want for more documentation see <a href="https://docs.docker.com/samples/library/mongo/">https://docs.docker.com/samples/library/mongo/</a></p>
 
+<h2 id="method-3-mongodb-installed-to-local-machine">Method #3: MongoDB installed to local machine</h2>
+
+<ul>
+<li>Install mongo to your local machine: <a href="https://docs.mongodb.com/manual/installation/">https://docs.mongodb.com/manual/installation/</a></li>
+<li>Ensure the mongodb server is running; Default configuration will run on port 27017</li>
+<li>OPTIONAL: connect MongoDBCompass to the server for visualizing the database with <code>mongodb:\\127.0.0.1:27017</code></li>
+<li>Windows: To open a mongo shell, run <code>\Mongo_install_path\Server\&lt;version&gt;\bin\mongo</code>
+
+<ul>
+<li>Check that the server is successfully connected</li>
+<li>The database has been created if the following command shows 'openstorefront' as non-zero:
+ <code>sh
+ show dbs</code></li>
+</ul></li>
+</ul>
+
 <h2 id="restore-data-to-the-database">Restore data to the database</h2>
 
 <p>You should have a backup of the database.</p>
+
+<h3 id="windows">Windows</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mkdir <span style="color:#ae81ff">\l</span>ocation<span style="color:#ae81ff">\f</span>or<span style="color:#ae81ff">\b</span>ackup-dir
+cd <span style="color:#ae81ff">\M</span>ongo_install_path<span style="color:#ae81ff">\S</span>erver<span style="color:#ae81ff">\&lt;</span>version&gt;<span style="color:#ae81ff">\b</span>in<span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>.<span style="color:#ae81ff">\m</span>ongodump.exe --db storefron --out <span style="color:#ae81ff">\p</span>ath<span style="color:#ae81ff">\t</span>o<span style="color:#ae81ff">\b</span>ackup-dir<span style="color:#ae81ff">\&#34;</span>backup name<span style="color:#e6db74">&#34;</span></code></pre></div>
+<h3 id="linuxunix">Linux/Unix</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mkdir mongo-backup
 mongodump --db storefront --out mongo-backup/<span style="color:#e6db74">`</span>date +<span style="color:#e6db74">&#34;%m-%d-%y&#34;</span><span style="color:#e6db74">`</span></code></pre></div>
-<p>And then put that data inside the running docker container.</p>
+<p>And then put that data inside the running docker container (or restore locally).</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># copy the backup to the container</span>
 docker cp <span style="color:#ae81ff">01</span>-08-20/. &lt;mongo container&gt;:/home
 

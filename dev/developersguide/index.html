@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-03-30T11:30:00 MDT">
+<meta name="revised" content="2020-07-14T14:53:58 MDT">
 <title>Developer Setup Guide :: SPOON Site Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -316,8 +316,8 @@
     </ul>
 
  <section id="footer"><div style="color: #E0E0DA;">
-    <p>SPOONsite version 2.12.1</p>
-    <p>Documentation generated on Mar 30, 2020</p>
+    <p>SPOONsite version 2.12.2</p>
+    <p>Documentation generated on Jul 14, 2020</p>
     <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.55.3</p>
 </div>
     </section>
@@ -408,19 +408,19 @@
 <li>Linux: <code>sudo apt install openjdk-8-jdk</code></li>
 </ul></li>
 
-<li><p>Install Netbeans 8.2 Java EE version from <a href="https://netbeans.org/downloads/8.2/">https://netbeans.org/downloads/8.2/</a></p>
+<li><p>Install the latest Netbeans version from <a href="https://netbeans.apache.org/download/">https://netbeans.apache.org/download/</a></p>
 
 <ul>
 <li>Run the installer, and during install don&rsquo;t check either server box (glassfish or tomcat)</li>
 <li>Point Netbeans to the Openjdk 8 installation path
 
 <ul>
-<li>Windows: <code>C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.222-2</code></li>
+<li>Windows: <code>C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.252-2</code></li>
 <li>Linux: <code>/usr/lib/jvm/java-8-openjdk-amd64/</code></li>
 </ul></li>
 </ul></li>
 
-<li><p>Download Tomcat 7.0.96 binaries from <a href="https://tomcat.apache.org/download-70.cgi">https://tomcat.apache.org/download-70.cgi</a></p>
+<li><p>Download Tomcat 7 binaries from <a href="https://tomcat.apache.org/download-70.cgi">https://tomcat.apache.org/download-70.cgi</a></p>
 
 <ul>
 <li>Unpack Tomcat</li>
@@ -439,7 +439,7 @@
 <li>Set the <code>JAVA_HOME</code> environment variable at the top of the elasticsearch executable
 
 <ul>
-<li>Windows: <code>set JAVA_HOME=C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.222-2</code></li>
+<li>Windows: <code>set JAVA_HOME=C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.252-2</code></li>
 <li>Linux: <code>JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64</code></li>
 </ul></li>
 <li>Start Elasticsearch by double-clicking the file that was just modified</li>
@@ -460,10 +460,11 @@
 <li><p>Start and configure Netbeans</p>
 
 <ul>
-<li>Netbeans &gt; tools &gt; options &gt; Java &gt; Maven &gt; Maven Home &gt; &ldquo;Point to maven folder downloaded from above&rdquo; &gt; apply &gt; OK</li>
-<li>Netbeans &gt; services &gt; servers &gt; add server &gt; Apache Tomcat or TomEE &gt; next &gt; &ldquo;Point to downloaded tomcat&rdquo; &gt; &ldquo;Set user name and password = 1&rdquo; &gt; finish</li>
-<li>Netbeans &gt; services &gt; &ldquo;just created server&rdquo; &gt; properties &gt; Platform &gt; VM Options &gt; <code>-Xms8G -Dapplication.datadir=E:/SPOON_PROJECT_DATA</code></li>
-<li>Netbeans &gt; File &gt; open project &gt; &ldquo;cloned project&rdquo; &gt; Open Project &gt; spoon_Directory=&gt;server_Directory=&gt;openstorefront &gt; Open Required Projects &gt; Open Project</li>
+<li>Netbeans &gt; tools &gt; options &gt; Java &gt; Maven &gt; Maven Home &gt; &ldquo;Point to maven folder downloaded from above or use bundled if version 3.6&rdquo; &gt; Apply &gt; OK</li>
+<li>Netbeans &gt; tools &gt; options &gt; Java &gt; Maven &gt; Dependencies &gt; select &ldquo;Every Project Open&rdquo; for each dropdown &gt; Apply &gt; OK</li>
+<li>Netbeans &gt; tools &gt; servers &gt; add server &gt; Apache Tomcat or TomEE &gt; next &gt; &ldquo;Point to downloaded tomcat&rdquo; &gt; &ldquo;Set user name and password&rdquo; &gt; finish</li>
+<li>Netbeans &gt; tools &gt; &ldquo;just created server&rdquo; &gt; Platform &gt; VM Options &gt; <code>-Xms8G -Dapplication.datadir=/empty/directory/for/data</code></li>
+<li>Netbeans &gt; File &gt; open project &gt; &ldquo;cloned project&rdquo; &gt; Open Project &gt; highlight <code>spoon_Directory/server/openstorefront</code> &gt; select &ldquo;Open Required Projects&rdquo; &gt; Open Project</li>
 <li>Resolve Problems &gt; &ldquo;Resolve each problem until all green.&rdquo; &gt; Close</li>
 </ul></li>
 
@@ -472,7 +473,14 @@
 <ul>
 <li>Clean the top-level openstorefront project (right-click and select clean)</li>
 <li>Build with dependencies (right-click and select build with dependencies, NOTE: this may take a long time as it has to download many packages)</li>
-<li>Run the openstorefront-web project (right-click and select run)</li>
+</ul></li>
+
+<li><p>Run the project</p>
+
+<ul>
+<li>Start mongo server (See MongoSetupGuide for help with MongoDB setup)</li>
+<li>Start Elasticsearch</li>
+<li>Run the openstorefront-web project in NetBeans (right-click and select run)</li>
 </ul></li>
 
 <li><p>Open a web browser to <code>localhost:8080/openstorefront</code></p>

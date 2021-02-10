@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-07-14T14:53:59 MDT">
+<meta name="revised" content="2021-02-10T11:01:28 MST">
 <title>Release Notes :: SPOON Site Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -315,8 +315,8 @@
     </ul>
 
  <section id="footer"><div style="color: #E0E0DA;">
-    <p>SPOONsite version 2.12.2</p>
-    <p>Documentation generated on Jul 14, 2020</p>
+    <p>SPOONsite version 2.12.3</p>
+    <p>Documentation generated on Feb 10, 2021</p>
     <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.55.3</p>
 </div>
     </section>
@@ -367,6 +367,12 @@
 <ul>
 <li>
 <ul>
+<li><a href="#release-notes-for-v2-12-3">Release Notes for v2.12.3</a>
+<ul>
+<li><a href="#task">Task</a></li>
+<li><a href="#story">Story</a></li>
+<li><a href="#bug">Bug</a></li>
+</ul></li>
 <li><a href="#release-notes-for-v2-12-2">Release Notes for v2.12.2</a></li>
 <li><a href="#release-notes-for-v2-12-1">Release Notes for v2.12.1</a></li>
 <li><a href="#release-notes-for-v2-12">Release Notes for v2.12</a></li>
@@ -422,6 +428,78 @@
 
 
 <p>For more information, please see <a href="https://github.com/spoonsite/SPOON/releases">GitHub</a>.</p>
+
+<h2 id="release-notes-for-v2-12-3">Release Notes for v2.12.3</h2>
+
+<p>This is the final release before the handoff of SPOON to NASA. A lot of bug and security fixes.</p>
+
+<h3 id="task">Task</h3>
+
+<ul>
+<li>[SPOON-1472] - Redirect or remove UserTool&gt;&lsquo;Change Password&rsquo;</li>
+<li>[SPOON-1474] - Clean unused code from the view.jsp page and associated pages/components</li>
+<li>[SPOON-1480] - Investigate missing default branding</li>
+<li>[SPOON-1485] - Investigate sending bulk email to SPOON users</li>
+<li>[SPOON-1489] - Update backup documentation</li>
+<li>[SPOON-1492] - Review SPOON documentation</li>
+<li>[SPOON-1494] - Investigate Mail Delivery Failure to Multiple Recipients</li>
+</ul>
+
+<h3 id="story">Story</h3>
+
+<ul>
+<li>[SPOON-1117] - Replace OrientDB with MongoDB</li>
+<li>[SPOON-1160] - Investigate Metadata exploit for api/v1/resource/components/{id}/metadata/(metadataid)</li>
+<li>[SPOON-1161] - Implement Weak Password Checking for api/v1/resource/users/currentuser/resetpassword ie&hellip; checking against the top 10000 worst passwords.</li>
+<li>[SPOON-1162] - Fix api/v1/resource/users/{username}/resetpassword</li>
+<li>[SPOON-1164] - Investigate api/v1/resource/userprofiles/{id}</li>
+<li>[SPOON-1171] - Fix api/v1/service/application/configproperties/{key}</li>
+<li>[SPOON-1172] - Fix api/v1/service/application/retrievemedia</li>
+<li>[SPOON-1173] - investigate api/v1/service/notification/contact-vendor</li>
+<li>[SPOON-1174] - Investigate api/v1/service/security/forgotusername</li>
+<li>[SPOON-1175] - Investigate api/v1/service/security/{username}/resetpassword</li>
+<li>[SPOON-1329] - Make error handling consistent in all Vue Files</li>
+<li>[SPOON-1354] - Change SPOON slides to the new wider view and new logo</li>
+<li>[SPOON-1446] - Prepare mockup designs to Craig and Lauren <sup>4</sup>&frasl;<sub>22</sub> meeting</li>
+<li>[SPOON-1453] - Log out doesn&rsquo;t redirect properly</li>
+<li>[SPOON-1464] - Delete All Code Related to the Old Submissions Form</li>
+<li>[SPOON-1465] - Remove advanced save search feature</li>
+<li>[SPOON-1469] - Remove old login and user pages</li>
+<li>[SPOON-1475] - Review the security of /api/v1/service/notification/contact-vendor-template</li>
+</ul>
+
+<h3 id="bug">Bug</h3>
+
+<ul>
+<li>[SPOON-1027] - 48 LSP (4,4,3) Copying &amp; Pasting External media (picture) claims to fail in Pop-up (But actually Works)</li>
+<li>[SPOON-1235] - Cancel on the contact form does nothing</li>
+<li>[SPOON-1237] - Logging on as a user (userdude/userDude1!) gives an error on the homepage about watches</li>
+<li>[SPOON-1238] - Tags, duplicate and confusing GUI button</li>
+<li>[SPOON-1239] - Tag deletion confirmation text is drastic and confusing</li>
+<li>[SPOON-1240] - When toggling status on an entry comments are not optional, but the ui says they are</li>
+<li>[SPOON-1241] - Searching for Attributes in Search Filters does not work properly</li>
+<li>[SPOON-1245] - Need to remove link in descripton toolbar for Insert Saved Search</li>
+<li>[SPOON-1246] - Recalcitrant Disclaimer Popup</li>
+<li>[SPOON-1250] - No longer able to send a test message from the profile page</li>
+<li>[SPOON-1254] - The word &ldquo;Storefornt&rdquo; appears in an admin setting</li>
+<li>[SPOON-1258] - Update Version to 2.11</li>
+<li>[SPOON-1316] - File generates logs like crazy</li>
+<li>[SPOON-1334] - Merging an organization dumps the approved parts of mergee- organization into Workplan Progress</li>
+<li>[SPOON-1368] - Unapproved/pending answers to questions should not be sent</li>
+<li>[SPOON-1371] - DO FIRST: Reports are now Admin only; remove ones that are OBE, fix or remove failing reports</li>
+<li>[SPOON-1375] - Deleted WorkPlan&rsquo;s Links Become Orphans</li>
+<li>[SPOON-1457] - Can&rsquo;t add attributes in admin add entry attribute tab</li>
+<li>[SPOON-1458] - Import exported file fails with SYSTEM error</li>
+<li>[SPOON-1463] - Investigate: Entry Listing report fails</li>
+<li>[SPOON-1468] - Admin Notification message links to wrong report path</li>
+<li>[SPOON-1470] - Registration &lsquo;Cancel&rsquo; button should redirect back to Login Page</li>
+<li>[SPOON-1471] - Investigate branding error</li>
+<li>[SPOON-1473] - Form submitting on the &ldquo;Forgot User&rdquo; page even with invalid email when pressing the enter key</li>
+<li>[SPOON-1482] - Unable to Approve Component Update Submissions</li>
+<li>[SPOON-1483] - Duplicate external links on page refresh</li>
+<li>[SPOON-1493] - Duplicate username created</li>
+<li>[SPOON-1502] - Investigate Imports Failing</li>
+</ul>
 
 <h2 id="release-notes-for-v2-12-2">Release Notes for v2.12.2</h2>
 

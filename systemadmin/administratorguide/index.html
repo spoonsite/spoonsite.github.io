@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2021-02-10T11:01:28 MST">
+<meta name="revised" content="2021-03-02T15:33:41 MST">
 <title>Administrator Guide :: SPOON Site Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -317,7 +317,7 @@
 
  <section id="footer"><div style="color: #E0E0DA;">
     <p>SPOONsite version 2.12.3</p>
-    <p>Documentation generated on Feb 10, 2021</p>
+    <p>Documentation generated on Mar 2, 2021</p>
     <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.55.3</p>
 </div>
     </section>
@@ -1100,13 +1100,12 @@ default lookup files that are packaged with the application.</p>
 
 <h2 id="troubleshooting">Troubleshooting</h2>
 
-<p>If Elasticsearch detects low disk space it will change into Read-Only mode at which point the index records can’t be changed
-which, causing problems with searching and updating records.</p>
+<p>If Elasticsearch detects low disk space it will change into Read-Only mode at which point the index records can’t be changed, which will cause problems with searching and updating records.</p>
 
 <p>To resolve:</p>
 
 <ol>
-<li><p>Correct the disk space issue</p></li>
+<li><p>Correct the disk space issue, then reset elasticsearch read-only property using the method below.</p></li>
 
 <li><p>Force Elasticsearch out of read-only mode (this should only be done when the disk space issue cannot be resolved)</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">curl -X PUT localhost:9200/_settings -H <span style="color:#e6db74">&#34;Content-Type: application/json&#34;</span> -d <span style="color:#e6db74">&#39;

@@ -26,7 +26,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/user/howtoregister/</guid>
-      <description>And Troubleshooting  Registering for an account on Spoon is free and open to anyone regardless of nationality. Spoon only supports English, however.  Sign up, if you haven&amp;rsquo;t already. You will need to fill in your information first, then select &amp;ldquo;GET VERIFICATION CODE&amp;rdquo;, which will create your account and send a confirmation email to your stated email address. You will not be able to login to Spoon until you click the confirmation link sent in the email.</description>
+      <description>And Troubleshooting  Registering for an account on Spoon is free and open to anyone regardless of nationality. Spoon only supports English, however.  Sign up, if you haven&amp;rsquo;t already. You will need to fill in your information first, then select &amp;ldquo;GET VERIFICATION CODE&amp;rdquo;, which will create your account and send a confirmation code to your stated email address. You will not be able to login to Spoon until you enter the confirmation code from the email on the registration page.</description>
     </item>
     
     <item>
@@ -196,7 +196,7 @@ If you want to add a new attribute or edit an existing one, click Add New Type o
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/applicationadmin/customsubmissionforms/</guid>
-      <description>Create a Custom Form This is how to create a custom submission form for new submissions.
+      <description>Create a Custom Form Custom Forms were deprecated in v2.12 and removed in 2.12.3  This is how to create a custom submission form for new submissions.
 Create Needed Attributes Before a form can be designed, any required or custom attributes should be added. To do this:
  Navigate to Admin Tools if you are not already there (click on your username in the upper-right, then Admin Tools Select Data Management &amp;rarr; Attributes Click +Add New Type and fill out the form as required for all attributes (required and optional) you will need to build your custom entry form in the next step.</description>
     </item>

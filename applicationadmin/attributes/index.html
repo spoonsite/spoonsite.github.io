@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2021-02-10T11:01:28 MST">
+<meta name="revised" content="2021-03-02T15:33:41 MST">
 <title>Attributes and Entry Types :: SPOON Site Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -317,7 +317,7 @@
 
  <section id="footer"><div style="color: #E0E0DA;">
     <p>SPOONsite version 2.12.3</p>
-    <p>Documentation generated on Feb 10, 2021</p>
+    <p>Documentation generated on Mar 2, 2021</p>
     <p>Created using <a href="https://gohugo.io/">Hugo</a> version 0.55.3</p>
 </div>
     </section>
@@ -374,7 +374,13 @@
 <li>
 <ul>
 <li><a href="#attributes">Attributes</a></li>
-<li><a href="#entries">Entries</a></li>
+<li><a href="#entries">Entries</a>
+<ul>
+<li>
+<ul>
+<li><a href="#change-requests">Change Requests</a></li>
+</ul></li>
+</ul></li>
 <li><a href="#entry-types">Entry Types</a></li>
 <li><a href="#submission-form-templates">Submission Form Templates</a></li>
 <li><a href="#partial-submissions">Partial Submissions</a></li>
@@ -504,6 +510,11 @@ An entry is a part that is added to the database.
 
 <p>The Administrator can manage all entries on this page. Admins have to ability to create, edit, delete, and toggle entries. Some user submissions may not appear in this screen, so you will have to go to the Data Management -&gt; Submissions -&gt; Partial Submissions page.</p>
 
+<h4 id="change-requests">Change Requests</h4>
+
+<p>Change requests can be managed on this page as well. From the <strong><em>Entries</em></strong> page, filter by change requests and select the part with a pending change request. Go to <strong><em>Action &gt; Change Requests</em></strong>, select the change request and compare the new entry to the original.
+Note: Approving a change request here will not reset the workplan progress of the entry, these changes will immediately be applied to the approved entry listing on the site.</p>
+
 <h2 id="entry-types">Entry Types</h2>
 
 <p><img src="/images/AppAdmin/EntryTypesPage.png" alt="Entry Types Page Screenshot" /></p>
@@ -557,12 +568,16 @@ An entry is a part that is added to the database.
 <h2 id="submission-form-templates">Submission Form Templates</h2>
 
 <div class="notices warning" >
-This feature will be deprecated in v2.12
+This feature was deprecated in v2.12 and removed in 2.12.3
 </div>
 
 <p>The submission form templates are a way for the administrator to have different submission forms for different entry types. Currently, this feature is used to make changes to the submission form, but all entry types use the same submission form.</p>
 
 <h2 id="partial-submissions">Partial Submissions</h2>
+
+<div class="notices warning" >
+This feature was deprecated in v2.12 and removed in 2.12.3
+</div>
 
 <p>All of the incomplete entry submissions that users are in process of uploaded to SPOON appear here. Any part that is seen in the Workplan Progress page will also be found here.</p>
 
